@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --mode es",
+    "dev:es": "vite --mode es",
+    "dev:pt": "vite --mode pt",
+    "build": "vite build --mode es",
+    "build:es": "vite build --mode es",
+    "build:pt": "vite build --mode pt",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-helmet-async": "^3.0.0",
+    "react-router-dom": "^7.14.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^3.4.19",
+    "vite": "^4.0.0"
+  }
+}

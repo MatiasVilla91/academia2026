@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.claude/
+.env
+.env.*
+*.local
+frontend/dist-es/
+frontend/dist-pt/
+*.log
+
+!.env.example
+!frontend/.env.example
+!backend/.env.example
+.DS_Store
