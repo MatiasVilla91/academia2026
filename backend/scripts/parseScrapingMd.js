@@ -19,7 +19,7 @@ const SECTION_MAP = {
 function toSlug(text) {
   return (text || '')
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[̀-ͯ]/g, '')
     .replace(/[^\w\s-]/g, ' ')
     .trim()
     .toLowerCase()
@@ -42,22 +42,23 @@ function parseRating(raw) {
 }
 
 function parseInlineValue(line, label) {
-  const match = line.match(new RegExp(`${label}:\\s*(.+)$`));
+  const match = line.match(new RegExp(label + ':\\s*(.+)$'));
   return match ? match[1].trim() : '';
 }
 
 function parseCourseBlock(lines, category) {
   const titleLine = lines[0] || '';
-  const titleMatch = titleLine.match(/^\d+\.\s+\*\*(.+?)\*\*(?:\s+`(🇪🇸)`)?\s*$/u);
+  const titleMatch = titleLine.match(/^\d+\.\s+\*\*(.+?)\*\*(?:\s+`🇪🇸`)?\s*$/u);
   if (!titleMatch) return null;
 
   const title = titleMatch[1].trim();
-  const isSpanishMarked = Boolean(titleMatch[2]);
+  const isSpanishMarked = /`🇪🇸`/.test(titleLine);
   const metaLine = lines.find((line) => line.trim().startsWith('Autor:')) || '';
   const linkLine = lines.find((line) => line.trim().startsWith('Link:')) || '';
 
+  // Rating es opcional (productos nuevos sin reseñas aún)
   const metaMatch = metaLine.match(
-    /^Autor:\s*(.+?)\s+\|\s+⭐\s*([\d.]+)\s+\|\s+Reseñas:\s*(\d+)\s+\|\s+Precio:\s+ARS\s+([\d.]+)\s*$/u
+    /^Autor:\s*(.+?)(?:\s+\|\s+⭐\s*([\d.]+))?\s+\|\s+Reseñas:\s*(\d+)\s+\|\s+Precio:\s+ARS\s+([\d.,]+)\s*$/u
   );
   if (!metaMatch || !linkLine) return null;
 
@@ -65,7 +66,7 @@ function parseCourseBlock(lines, category) {
   const hotmartIdMatch = sourceUrl.match(/\/([A-Z]\d+[A-Z])$/);
   const language = sourceUrl.includes('/pt-br/') ? 'pt' : sourceUrl.includes('/es/') ? 'es' : isSpanishMarked ? 'es' : null;
   const hotmartId = hotmartIdMatch?.[1] || null;
-  const slug = toSlug(title) || toSlug(hotmartId) || `curso-${Date.now()}`;
+  const slug = toSlug(title) || toSlug(hotmartId) || ('curso-' + Date.now());
 
   return {
     title,

@@ -69,7 +69,7 @@ Tenés toda la información necesaria para estudiarla con calma. Acá está el c
     Autor: Elaine C Matos | ⭐ 4.6 | Reseñas: 73 | Precio: ARS 32.369  
     Link: https://hotmart.com/pt-br/marketplace/produtos/a-magia-das-cartas-ciganas/O18395128E
 
-## Chakras, Energía y Terapias Alternativas (7 productos)
+## Chakras, Energía y Terapias Alternativas (8 productos)
 
 16. **Cirugía Astral Certificación + Bonos Gratis + Garantía** `🇪🇸`  
     Autor: Simpleclick Inc. | ⭐ 4.9 | Reseñas: 299 | Precio: ARS 122.989  
@@ -99,84 +99,92 @@ Tenés toda la información necesaria para estudiarla con calma. Acá está el c
     Autor: Profª Vanessa - Desperta Luz | ⭐ 4.8 | Reseñas: 44 | Precio: ARS 32.369  
     Link: https://hotmart.com/pt-br/marketplace/produtos/curso-basico-de-cromoterapia-o-uso-das-cores-para-o-equilibrio-energetico/U7377108V
 
+23. **Seminario Intensivo en Constelaciones Familiares** `🇪🇸`  
+    Autor: Verónica Fuentes | Reseñas: 0 | Precio: ARS 58.697  
+    Link: https://hotmart.com/es/marketplace/productos/seminario-intensivo-en-constelaciones-familiares/J104620391S
+
 ## Reiki y Sanación Energética (3 productos)
 
-23. **Formação Mestre Terapeuta Usui (Reiki - 25 Certificados)**  
+24. **Formação Mestre Terapeuta Usui (Reiki - 25 Certificados)**  
     Autor: Grupo de Reiki | ⭐ 4.5 | Reseñas: 143 | Precio: ARS 666.394  
     Link: https://hotmart.com/pt-br/marketplace/produtos/formacao-reiki-integrativo-4-0/Q39107614B
 
-24. **Curso Reiki em Cura Xamânica Estrelar**  
+25. **Curso Reiki em Cura Xamânica Estrelar**  
     Autor: Eduardo Scarpari Gomes | ⭐ 4.9 | Reseñas: 45 | Precio: ARS 32.697  
     Link: https://hotmart.com/pt-br/marketplace/produtos/formacao-reiki-na-cura-xamanica-estrelar/X36259728S
 
-25. **Reiki Usui - Nível 2 - A Transformação**  
+26. **Reiki Usui - Nível 2 - A Transformação**  
     Autor: Portal Cursos Quânticos | ⭐ 5.0 | Reseñas: 33 | Precio: ARS 21.357  
     Link: https://hotmart.com/pt-br/marketplace/produtos/reiki-usui-nivel-1-o-despertar-2/F39369600T
 
 ## Ángeles y Arcángeles (5 productos)
 
-26. **7 días transformando mi vida con los arcángeles** `🇪🇸`  
+27. **7 días transformando mi vida con los arcángeles** `🇪🇸`  
     Autor: Kathe Hidalgo | ⭐ 5.0 | Reseñas: 27 | Precio: ARS 3.129  
     Link: https://hotmart.com/es/marketplace/productos/7-dias-transformando-mi-vida-con-los-arcangeles/E42012814X
 
-27. **21 Días de Paz con tus Ángeles En Línea** `🇪🇸`  
+28. **21 Días de Paz con tus Ángeles En Línea** `🇪🇸`  
     Autor: Tania Karam | ⭐ 4.8 | Reseñas: 94 | Precio: ARS 222.624  
     Link: https://hotmart.com/es/marketplace/productos/21-dias-de-paz-con-tus-angeles-en-linea/P47393039T
 
-28. **Escucha a tus Ángeles con el Corazón** `🇪🇸`  
+29. **Escucha a tus Ángeles con el Corazón** `🇪🇸`  
     Autor: Angélica Bovino | ⭐ 4.8 | Reseñas: 53 | Precio: ARS 239.330  
     Link: https://hotmart.com/es/marketplace/productos/escucha-a-tus-angeles-con-el-corazon/I39987166L
 
-29. **Cómo Contactar a tus Ángeles** `🇪🇸`  
+30. **Cómo Contactar a tus Ángeles** `🇪🇸`  
     Autor: Tania Karam | ⭐ 4.6 | Reseñas: 57 | Precio: ARS 61.495  
     Link: https://hotmart.com/es/marketplace/productos/como-contactar-a-tus-angeles/D69792389B
 
-30. **Terapeuta Angelical I** `🇪🇸`  
+31. **Terapeuta Angelical I** `🇪🇸`  
     Autor: Paula Fernanda Londoño | ⭐ 4.5 | Reseñas: 31 | Precio: ARS 41.552  
     Link: https://hotmart.com/es/marketplace/productos/certificate-como-terapeuta-angelical/F48957897U
 
 ## Numerología y Astrología (2 productos)
 
-31. **Curso de Formação de Numerologia**  
+32. **Curso de Formação de Numerologia**  
     Autor: Rafael Cristian Cintra | ⭐ 4.6 | Reseñas: 341 | Precio: ARS 16.794  
     Link: https://hotmart.com/pt-br/marketplace/produtos/curso-de-formacao-de-numerologia/O14384331G
 
-32. **Carta Natal + Certificación + Bonos** `🇪🇸`  
+33. **Carta Natal + Certificación + Bonos** `🇪🇸`  
     Autor: Simpleclick Inc. | ⭐ 4.9 | Reseñas: 52 | Precio: ARS 44.875  
     Link: https://hotmart.com/es/marketplace/productos/aprende-carta-natal-bonos-gratis-garantia/B58184016U
 
 ## Meditación y Mindfulness (4 productos)
 
-33. **Mindfulness 6 semanas de Serenidad, Presencia y Consciencia** `🇪🇸`  
+34. **Mindfulness 6 semanas de Serenidad, Presencia y Consciencia** `🇪🇸`  
     Autor: Tuti Furlán | ⭐ 4.7 | Reseñas: 118 | Precio: ARS 131.300  
     Link: https://hotmart.com/es/marketplace/productos/mindfulness-6-semanas-de-serenidad-presencia-y-conciencia-plena/L40999546Q
 
-34. **Introducción al Yoga** `🇪🇸`  
+35. **Introducción al Yoga** `🇪🇸`  
     Autor: Lorena | ⭐ 4.9 | Reseñas: 89 | Precio: ARS 156.230  
     Link: https://hotmart.com/es/marketplace/productos/introduccion-a-la-meditacion-y-el-yoga/A33605059E
 
-35. **Meditaciones guiadas para mantener la calma** `🇪🇸`  
+36. **Meditaciones guiadas para mantener la calma** `🇪🇸`  
     Autor: Virginia Blanes | ⭐ 4.8 | Reseñas: 46 | Precio: ARS 77.924  
     Link: https://hotmart.com/es/marketplace/productos/meditaciones-guiadas-para-mantener-la-calma-y-conectar-con-tu-corazon/V24098491H
 
-36. **La Sangha con Durga Stef - Tribu del Despertar** `🇪🇸`  
+37. **La Sangha con Durga Stef - Tribu del Despertar** `🇪🇸`  
     Autor: Durga Stef | ⭐ 4.8 | Reseñas: 45 | Precio: ARS 78.115  
     Link: https://hotmart.com/es/marketplace/productos/la-sangha-con-durga-stef-tribu-del-despertar/N42198774V
 
-## Magia, Plantas y Otras Temáticas (4 productos)
+## Magia, Plantas y Otras Temáticas (5 productos)
 
-37. **Magia con Velas** `🇪🇸`  
+38. **Magia con Velas** `🇪🇸`  
     Autor: Academia de Magia y Espiritualidad | ⭐ 4.1 | Reseñas: 35 | Precio: ARS 16.622  
     Link: https://hotmart.com/es/marketplace/productos/magia-con-velas-3lts8/N82595505Q
 
-38. **Grimorio Herbal** `🇪🇸`  
+39. **Grimorio Herbal** `🇪🇸`  
     Autor: Academia de Magia y Espiritualidad | ⭐ 4.5 | Reseñas: 83 | Precio: ARS 16.622  
     Link: https://hotmart.com/es/marketplace/productos/grimorio-herbal/O84817878Y
 
-39. **Curso Magia das Plantas**  
+40. **Curso Magia das Plantas**  
     Autor: Gloria Nayara | ⭐ 4.6 | Reseñas: 39 | Precio: ARS 32.697  
     Link: https://hotmart.com/pt-br/marketplace/produtos/curso-magia-das-plantas/T42691310A
 
-40. **Terapia Bioenergética para Animales** `🇪🇸`  
+41. **Terapia Bioenergética para Animales** `🇪🇸`  
     Autor: MasterClasses.La® | ⭐ 4.4 | Reseñas: 33 | Precio: ARS 83.085  
     Link: https://hotmart.com/es/marketplace/productos/terapia-bioenergetica-para-animales/Y55078318X
+
+42. **Emperatriz Magnética (Version Premium)** `🇪🇸`  
+    Autor: Mente Luchador | ⭐ 3.7 | Reseñas: 22 | Precio: ARS 52.682  
+    Link: https://hotmart.com/es/marketplace/productos/emperatriz-magnetica-el-secreto-oculto-de-tu-poder-irresistible/V95652453H

@@ -45,10 +45,10 @@ export function buildCourseCatalog() {
       reviewsCount: enriched.reviewsCount ?? course.reviewsCount ?? null,
       priceARS: enriched.priceARS ?? course.priceARS ?? null,
       workloadHours: enriched.workloadHours ?? null,
-      affiliateUrl: buildAffiliateUrl(course.hotmartId),
+      affiliateUrl: enriched.affiliateUrl || buildAffiliateUrl(course.hotmartId),
       affiliationStatus: 'pending',
       scrapedAt: new Date(),
-      active: true,
+      active: (enriched.language || course.language) !== 'pt',
     };
   });
 }
