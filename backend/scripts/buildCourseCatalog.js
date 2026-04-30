@@ -28,5 +28,7 @@ export function buildCourseCatalog() {
       affiliationStatus: 'pending',
       active:            true,
       scrapedAt:         new Date(),
+      ...(e.highlights    ? { highlights:    e.highlights    } : {}),
+      ...(e.instructorBio ? { instructorBio: e.instructorBio } : {}),
     }));
 }

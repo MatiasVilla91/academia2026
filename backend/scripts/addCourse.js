@@ -25,7 +25,6 @@ const ENRICHMENT_NDJSON = join(__dirname, '..', 'data', 'enrichment.ndjson');
 
 const SECTION_NAMES = {
   tarot:       'Tarot y Oráculos',
-  baralho:     'Baralho Cigano / Cartas Gitanas',
   chakras:     'Chakras, Energía y Terapias Alternativas',
   reiki:       'Reiki y Sanación Energética',
   angeles:     'Ángeles y Arcángeles',
@@ -37,7 +36,6 @@ const SECTION_NAMES = {
 
 const SECTION_KEYWORDS = {
   tarot:       ['tarot', 'oráculo', 'oraculo', 'arcano', 'baraja'],
-  baralho:     ['cigano', 'gitana', 'baralho', 'ciganas'],
   reiki:       ['reiki'],
   angeles:     ['ángel', 'angel', 'arcángel', 'arcangel'],
   numerologia: ['numerolog', 'astrolog', 'carta natal', 'horóscopo', 'horoscopo', 'zodiac'],

@@ -24,6 +24,7 @@ export default {
   },
   course: {
     buy: 'Comprar na Hotmart',
+    buyNow: 'Quero este curso',
     relatedCourses: 'Cursos relacionados',
     viewCourse: 'Ver curso',
     by: 'por',
@@ -44,6 +45,12 @@ export default {
     dataSource: 'Código Hotmart',
     moreFromCategory: 'Ver mais desta categoria',
     seeCategory: 'Explorar categoria',
+    whatYouLearn: 'O que você vai aprender',
+    aboutInstructor: 'Sobre o instrutor',
+    guaranteeBadge: 'Pagamento seguro · Garantia de 7 dias Hotmart',
+    guaranteeTitle: 'Garantia de 7 dias',
+    guaranteeText: 'Compre com total confiança. Se nos primeiros 7 dias você não estiver satisfeito/a com o curso, a Hotmart reembolsa o seu dinheiro sem perguntas.',
+    readyToStart: 'Pronto/a para começar sua jornada?',
   },
   pagination: {
     prev: '← Anterior',
@@ -57,7 +64,6 @@ export default {
   },
   categories: {
     tarot: 'Tarot',
-    baralho_cigano: 'Baralho Cigano',
     chakras_energia: 'Chakras e Energia',
     reiki: 'Reiki',
     angeles: 'Anjos',
