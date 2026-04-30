@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Academia Astral — Agregar Curso",
+  "version": "1.0",
+  "description": "Importar cursos de Hotmart al catálogo local de Academia Astral",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:5000/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Academia Astral — Agregar Curso"
+  }
+}

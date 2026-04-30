@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import coursesRoutes from './routes/courses.js';
+import adminRoutes from './routes/admin.js';
 import { getCategories } from './controllers/courseQueries.js';
 
 dotenv.config();
@@ -34,6 +35,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/api/courses', coursesRoutes);
+app.use('/api/admin', adminRoutes);
 app.get('/api/categories', getCategories);
 
 app.use((req, res) => {

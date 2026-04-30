@@ -19,7 +19,7 @@ async function run() {
   console.log('MongoDB conectado');
 
   const courses = buildCourseCatalog();
-  console.log(`Parseados y enriquecidos: ${courses.length} cursos`);
+  console.log(`Cursos con afiliado: ${courses.length}`);
 
   let inserted = 0;
   let updated = 0;
@@ -42,11 +42,15 @@ async function run() {
     }
   }
 
+  const activeIds = courses.map((c) => c.hotmartId);
+  const deleted = await Course.deleteMany({ hotmartId: { $nin: activeIds } });
+
   const total = await Course.countDocuments();
   console.log('\n--- Resumen ---');
   console.log(`Procesados   : ${courses.length}`);
   console.log(`Insertados   : ${inserted}`);
   console.log(`Actualizados : ${updated}`);
+  console.log(`Eliminados   : ${deleted.deletedCount}`);
   console.log(`Errores      : ${errors}`);
   console.log(`Total en Mongo: ${total}`);
 

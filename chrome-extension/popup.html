@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Academia Astral</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 440px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 13px;
+      background: #0f0b1e;
+      color: #e8e0f8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a0f3d 0%, #2d1b69 100%);
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid #3d2980;
+    }
+    header h1 { font-size: 15px; font-weight: 600; color: #c4a8ff; letter-spacing: 0.3px; }
+    header p  { font-size: 11px; color: #7c6aaa; margin-top: 2px; }
+
+    #statusBar {
+      padding: 10px 14px;
+      font-size: 12px;
+      display: none;
+      align-items: center;
+      gap: 8px;
+    }
+    #statusBar.loading { display: flex; background: #1a1535; color: #a08cd4; }
+    #statusBar.error   { display: flex; background: #2a0d1a; color: #f87a9a; }
+    #statusBar.success { display: flex; background: #0d2a1a; color: #6fcf97; }
+
+    .spinner {
+      width: 14px; height: 14px;
+      border: 2px solid #3d2980;
+      border-top-color: #c4a8ff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      flex-shrink: 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    form { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 9px; }
+
+    .row { display: flex; gap: 8px; }
+    .field { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+
+    label { font-size: 11px; color: #8a78b8; font-weight: 500; letter-spacing: 0.2px; }
+
+    input, select, textarea {
+      background: #1a1535;
+      border: 1px solid #3a2870;
+      border-radius: 5px;
+      color: #e8e0f8;
+      font-size: 12px;
+      padding: 6px 8px;
+      outline: none;
+      width: 100%;
+      transition: border-color 0.15s;
+    }
+    input:focus, select:focus, textarea:focus { border-color: #7c5cbf; }
+    textarea { resize: vertical; min-height: 56px; font-family: inherit; }
+    select option { background: #1a1535; }
+
+    input[type="number"] { -moz-appearance: textfield; }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+    .divider { height: 1px; background: #2a2050; margin: 2px 0; }
+
+    button[type="submit"] {
+      margin-top: 4px;
+      padding: 9px;
+      background: linear-gradient(135deg, #5b3fa0 0%, #3d2980 100%);
+      border: none;
+      border-radius: 6px;
+      color: #e8e0f8;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      letter-spacing: 0.2px;
+    }
+    button[type="submit"]:hover  { opacity: 0.9; }
+    button[type="submit"]:active { opacity: 0.8; }
+    button[type="submit"]:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    #notHotmart {
+      padding: 32px 20px;
+      text-align: center;
+      color: #6a5a9a;
+      display: none;
+    }
+    #notHotmart p { margin-top: 8px; font-size: 12px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Academia Astral</h1>
+    <p>Agregar curso al catálogo</p>
+  </header>
+
+  <div id="statusBar">
+    <span class="spinner" id="spinner"></span>
+    <span id="statusMsg"></span>
+  </div>
+
+  <div id="notHotmart">
+    <strong>No estás en una página de producto de Hotmart.</strong>
+    <p>Abrí el producto en Hotmart y luego hacé clic en la extensión.</p>
+  </div>
+
+  <form id="courseForm">
+    <div class="field">
+      <label>Título *</label>
+      <input id="title" type="text" required placeholder="Nombre del curso">
+    </div>
+
+    <div class="field">
+      <label>Instructor *</label>
+      <input id="instructor" type="text" required placeholder="Nombre del autor">
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Rating</label>
+        <input id="rating" type="number" step="0.1" min="0" max="5" placeholder="4.8">
+      </div>
+      <div class="field">
+        <label>Reseñas</label>
+        <input id="reviewsCount" type="number" min="0" value="0">
+      </div>
+      <div class="field">
+        <label>Precio ARS</label>
+        <input id="priceARS" type="number" min="0" placeholder="52682">
+      </div>
+      <div class="field">
+        <label>Horas</label>
+        <input id="workloadHours" type="number" min="0" placeholder="">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Categoría *</label>
+      <select id="category" required>
+        <option value="">— Elegir categoría —</option>
+        <option value="tarot">Tarot y Oráculos</option>
+        <option value="baralho_cigano">Baralho Cigano / Cartas Gitanas</option>
+        <option value="chakras_energia">Chakras y Energía</option>
+        <option value="reiki">Reiki y Sanación</option>
+        <option value="angeles">Ángeles y Arcángeles</option>
+        <option value="numerologia_astrologia">Numerología / Astrología</option>
+        <option value="meditacion">Meditación y Mindfulness</option>
+        <option value="magia_plantas">Magia, Plantas y Otros</option>
+      </select>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="field">
+      <label>Descripción</label>
+      <textarea id="description" placeholder="Descripción del curso..."></textarea>
+    </div>
+
+    <div class="field">
+      <label>URL Imagen</label>
+      <input id="imageUrl" type="text" placeholder="https://hotmart.s3.amazonaws.com/...">
+    </div>
+
+    <div class="field">
+      <label>URL Afiliado</label>
+      <input id="affiliateUrl" type="text" placeholder="https://hotmart.com/...?ref=...">
+    </div>
+
+    <input id="hotmartId" type="hidden">
+    <input id="sourceUrl" type="hidden">
+    <input id="language" type="hidden">
+
+    <button type="submit" id="submitBtn">Agregar al catálogo</button>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>

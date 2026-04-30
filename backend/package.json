@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon server.js",
     "seed": "node scripts/seed.js",
-    "ingest": "node scripts/ingestFromScraping.js",
-    "export:catalog": "node scripts/exportLocalCatalog.js"
+    "export:catalog": "node scripts/exportLocalCatalog.js",
+    "backfill": "node scripts/backfillCourses.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -15,7 +15,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.18.2",
-    "mongoose": "^6.12.0"
+    "mongoose": "^6.12.0",
+    "puppeteer": "^24.42.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
