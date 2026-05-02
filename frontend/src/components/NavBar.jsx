@@ -17,6 +17,7 @@ export default function NavBar() {
         <div className="flex items-center gap-6">
           <NavLink
             to="/"
+            end
             className={({ isActive }) =>
               `text-sm transition-colors ${
                 isActive ? 'text-[#D4AF37]' : 'text-gray-400 hover:text-white'
@@ -24,6 +25,16 @@ export default function NavBar() {
             }
           >
             {t('nav.home')}
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              `text-sm transition-colors ${
+                isActive ? 'text-[#D4AF37]' : 'text-gray-400 hover:text-white'
+              }`
+            }
+          >
+            {t('nav.blog')}
           </NavLink>
         </div>
       </div>

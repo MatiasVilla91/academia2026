@@ -1,6 +1,7 @@
 export default {
   nav: {
     home: 'Inicio',
+    blog: 'Blog',
   },
   filters: {
     title: 'Filtros',
