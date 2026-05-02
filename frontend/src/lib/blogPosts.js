@@ -1,5 +1,416 @@
 export const blogPosts = [
   {
+    slug: 'como-hacer-auto-reiki',
+    title: 'Cómo Hacer Auto Reiki: Guía Simple para Empezar',
+    description:
+      'Aprendé cómo hacer auto reiki paso a paso, qué condiciones conviene preparar, dónde ubicar las manos y cómo incorporar esta práctica a tu rutina personal.',
+    date: '2026-05-02',
+    category: 'reiki',
+    readTime: 7,
+    content: [
+      {
+        type: 'p',
+        text: 'El auto reiki es una de las prácticas más valiosas para quien quiere incorporar esta disciplina a su vida cotidiana. Antes de pensar en aplicar reiki a otras personas, tiene sentido aprender a usarlo sobre uno mismo, porque ahí se desarrolla presencia, constancia y una percepción más clara de cómo responde el cuerpo y el estado emocional.',
+      },
+      {
+        type: 'p',
+        text: 'Cuando alguien busca cómo hacer auto reiki, suele imaginar una técnica complicada o demasiado ritualizada. En realidad, puede practicarse de forma simple. Lo importante no es crear una puesta en escena perfecta, sino sostener un espacio breve de atención y calma con cierta regularidad.',
+      },
+      {
+        type: 'h2',
+        text: 'Qué necesitás para hacer auto reiki',
+      },
+      {
+        type: 'p',
+        text: 'No hace falta montar un entorno complejo. Alcanzan unas condiciones mínimas: un lugar relativamente tranquilo, una postura cómoda y unos minutos sin interrupciones. Algunas personas usan música suave o respiraciones previas, pero no es obligatorio.',
+      },
+      {
+        type: 'h2',
+        text: 'Cómo hacer auto reiki paso a paso',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Buscá una postura cómoda, sentado o recostado.',
+          'Tomá unas respiraciones lentas para bajar el ritmo mental.',
+          'Llevá las manos a una primera posición, por ejemplo cabeza o pecho.',
+          'Mantené cada posición durante unos minutos sin apurarte.',
+          'Recorré distintas zonas del cuerpo según tu práctica o formación.',
+          'Cerrá con una pausa breve observando cómo te sentís.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'La experiencia no siempre se siente igual. A veces aparece calor, alivio o relajación; otras veces la práctica se vive de modo muy sutil. Eso no significa que esté “mal hecha”. La constancia importa más que la intensidad de una sensación puntual.',
+      },
+      {
+        type: 'h2',
+        text: 'Dónde poner las manos',
+      },
+      {
+        type: 'p',
+        text: 'Las posiciones pueden variar según la escuela, pero muchas prácticas comienzan por cabeza, garganta, pecho, abdomen y otras zonas centrales del cuerpo. Si ya hiciste una formación, conviene seguir el orden enseñado. Si todavía no, el criterio básico es trabajar con suavidad, sin tensión y con respeto por el propio cuerpo.',
+      },
+      {
+        type: 'h2',
+        text: 'Cuánto tiempo dedicar',
+      },
+      {
+        type: 'p',
+        text: 'No hace falta hacer sesiones largas para que el auto reiki sea útil. Diez o quince minutos sostenidos con atención pueden aportar más que una práctica extensa hecha con prisa o dispersión. Si podés, es mejor repetir con frecuencia que hacer algo muy esporádico.',
+      },
+      {
+        type: 'h2',
+        text: 'Beneficios posibles del auto reiki',
+      },
+      {
+        type: 'ul',
+        items: [
+          'más sensación de calma y orden interno',
+          'mejor registro corporal',
+          'espacios de pausa en días exigentes',
+          'mayor conexión con hábitos de autocuidado',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Errores comunes al empezar',
+      },
+      {
+        type: 'ul',
+        items: [
+          'querer sentir algo espectacular en cada práctica',
+          'abandonar porque la experiencia fue sutil',
+          'practicar solo cuando todo está desbordado',
+          'convertir la técnica en una obligación rígida',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Una práctica simple que gana valor con constancia',
+      },
+      {
+        type: 'p',
+        text: 'Hacer auto reiki no requiere perfección, sino repetición consciente. Con el tiempo, esa práctica puede convertirse en un recurso concreto para bajar tensión, registrar mejor lo que te pasa y construir una relación más cuidada con tu propia energía.',
+      },
+    ],
+  },
+  {
+    slug: 'como-es-una-sesion-de-reiki',
+    title: 'Cómo Es una Sesión de Reiki: Qué Esperar Antes, Durante y Después',
+    description:
+      'Descubrí cómo es una sesión de reiki, qué suele pasar antes y durante el encuentro, cuánto dura y qué expectativas conviene tener si es tu primera vez.',
+    date: '2026-05-02',
+    category: 'reiki',
+    readTime: 6,
+    content: [
+      {
+        type: 'p',
+        text: 'Si nunca recibiste reiki, es normal preguntarte cómo es una sesión y qué deberías esperar. Muchas personas llegan con curiosidad, pero también con ideas confusas: algunas esperan una experiencia extraordinaria y otras creen que no van a sentir nada. La realidad suele ser mucho más simple y, justamente por eso, más útil.',
+      },
+      {
+        type: 'p',
+        text: 'Una sesión de reiki suele ser un espacio de quietud, presencia y relajación. No hace falta prepararse de una manera especial, pero sí conviene llegar con una expectativa razonable: no buscar una escena espectacular, sino abrirse a una experiencia de pausa y cuidado.',
+      },
+      {
+        type: 'h2',
+        text: 'Antes de la sesión',
+      },
+      {
+        type: 'p',
+        text: 'En muchos casos hay un breve intercambio inicial para comentar cómo te sentís o qué te gustaría trabajar. No siempre se trata de “resolver un problema” concreto; a veces alcanza con reconocer cansancio, ansiedad, saturación o simplemente necesidad de calma.',
+      },
+      {
+        type: 'h2',
+        text: 'Durante la sesión de reiki',
+      },
+      {
+        type: 'p',
+        text: 'Por lo general, la persona se recuesta o se sienta cómodamente mientras el practicante coloca las manos sobre distintas zonas del cuerpo o a corta distancia. La sesión transcurre en silencio o con muy pocas indicaciones. En ese contexto algunas personas sienten calor, pesadez, liviandad, sueño o relajación profunda; otras solo notan una disminución del ruido mental.',
+      },
+      {
+        type: 'p',
+        text: 'No sentir algo muy marcado no significa que la sesión haya sido inútil. Muchas veces el efecto se reconoce después, al notar que el cuerpo está más suelto o que la mente quedó menos acelerada.',
+      },
+      {
+        type: 'h2',
+        text: 'Cuánto dura una sesión',
+      },
+      {
+        type: 'p',
+        text: 'La duración puede variar según el enfoque de cada practicante, pero muchas sesiones rondan entre 30 y 60 minutos. Más importante que la duración exacta es la calidad del espacio: tranquilidad, presencia y una experiencia que no se sienta apurada.',
+      },
+      {
+        type: 'h2',
+        text: 'Después de la sesión',
+      },
+      {
+        type: 'p',
+        text: 'Después del encuentro, algunas personas se sienten livianas y despejadas; otras más sensibles o con necesidad de descansar. No hay una reacción única correcta. Lo más útil suele ser registrar cómo quedó el cuerpo, cómo está la respiración y qué cambió en el estado general.',
+      },
+      {
+        type: 'h2',
+        text: 'Qué expectativas conviene evitar',
+      },
+      {
+        type: 'ul',
+        items: [
+          'esperar una transformación inmediata y total',
+          'pensar que hay que sentir algo extraordinario para que sirva',
+          'confundir una sesión de bienestar con un tratamiento médico',
+          'asumir que la experiencia de otra persona será igual a la tuya',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Qué puede aportar una primera sesión',
+      },
+      {
+        type: 'p',
+        text: 'Una primera sesión de reiki puede servir para conocer la práctica desde la experiencia directa y ver si resuena con vos. A veces lo más valioso no es una sensación puntual, sino descubrir que existe un espacio donde podés bajar la velocidad, escuchar más al cuerpo y recuperar algo de equilibrio.',
+      },
+    ],
+  },
+  {
+    slug: 'que-es-reiki',
+    title: 'Qué es Reiki: Para Qué Sirve, Beneficios y Cómo Funciona',
+    description:
+      'Descubrí qué es reiki, para qué sirve, cómo funciona una sesión y qué beneficios puede aportar como práctica de bienestar y equilibrio energético.',
+    date: '2026-05-02',
+    category: 'reiki',
+    readTime: 7,
+    content: [
+      {
+        type: 'p',
+        text: 'Reiki es una práctica de origen japonés orientada a favorecer el equilibrio y la relajación a través de la canalización energética. Muchas personas lo utilizan como una herramienta complementaria para reducir el estrés, ordenar emociones y acompañar procesos de bienestar físico y mental.',
+      },
+      {
+        type: 'p',
+        text: 'Cuando alguien pregunta qué es reiki, en realidad suele estar preguntando tres cosas al mismo tiempo: qué sucede en una sesión, para qué sirve y si hace falta creer en algo para que la experiencia tenga sentido. La respuesta corta es que no hace falta adoptar una creencia específica para acercarse a la práctica; alcanza con entenderla como un espacio de calma, atención y armonización.',
+      },
+      {
+        type: 'h2',
+        text: 'Qué significa reiki',
+      },
+      {
+        type: 'p',
+        text: 'La palabra reiki suele explicarse a partir de dos ideas: “rei”, asociada a lo universal, y “ki”, vinculada a la energía vital. Más allá de las definiciones exactas, el concepto central es que el practicante trabaja como canal, ofreciendo un contexto de quietud y presencia para acompañar el equilibrio energético de otra persona o de sí mismo.',
+      },
+      {
+        type: 'h2',
+        text: 'Para qué sirve el reiki',
+      },
+      {
+        type: 'p',
+        text: 'Reiki no debería presentarse como reemplazo de atención médica, psicológica o terapéutica. Su valor está en otro lugar: ayudar a bajar la tensión, mejorar la percepción de calma y generar un momento de conexión interna. Muchas personas lo incorporan para:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'reducir estrés y ansiedad',
+          'acompañar momentos de agotamiento emocional',
+          'mejorar la sensación de relajación corporal',
+          'favorecer procesos de introspección y autocuidado',
+          'sumar una práctica complementaria de bienestar',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Cómo funciona una sesión de reiki',
+      },
+      {
+        type: 'p',
+        text: 'En una sesión tradicional, la persona se recuesta o se sienta cómodamente mientras el practicante coloca las manos sobre distintos puntos del cuerpo o a poca distancia. El entorno suele ser silencioso y tranquilo. La experiencia varía según cada persona: algunas sienten calor, liviandad o relajación profunda; otras simplemente perciben una pausa mental poco habitual.',
+      },
+      {
+        type: 'p',
+        text: 'No hace falta “sentir algo extraordinario” para que la sesión resulte útil. A veces el principal beneficio es bajar revoluciones y recuperar una sensación básica de orden interno.',
+      },
+      {
+        type: 'h2',
+        text: 'Beneficios posibles del reiki',
+      },
+      {
+        type: 'p',
+        text: 'Los beneficios más citados por quienes practican o reciben reiki suelen estar asociados al bienestar subjetivo. Entre ellos aparecen la relajación, la claridad emocional y una mejor disposición para atravesar etapas exigentes. En ese sentido, funciona mejor cuando se entiende como una práctica de apoyo y no como una promesa milagrosa.',
+      },
+      {
+        type: 'h2',
+        text: 'Mitos comunes sobre el reiki',
+      },
+      {
+        type: 'ul',
+        items: [
+          'No hace falta tener un “don especial” para aprender.',
+          'No exige adherir a una religión particular.',
+          'No reemplaza tratamientos médicos ni diagnósticos profesionales.',
+          'No todas las personas viven la sesión de la misma manera.',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Vale la pena aprender reiki',
+      },
+      {
+        type: 'p',
+        text: 'Si te interesa el autocuidado, la energía y las prácticas de bienestar, aprender reiki puede ser una buena puerta de entrada. Su valor no está en prometer resultados absolutos, sino en ofrecer una herramienta sencilla para cultivar presencia, calma y sensibilidad energética con más conciencia.',
+      },
+    ],
+  },
+  {
+    slug: 'reiki-nivel-1',
+    title: 'Reiki Nivel 1: Qué Se Aprende y Para Quién Es',
+    description:
+      'Conocé qué se aprende en reiki nivel 1, cómo es una iniciación, qué prácticas se trabajan y si este primer paso es adecuado para vos.',
+    date: '2026-05-02',
+    category: 'reiki',
+    readTime: 7,
+    content: [
+      {
+        type: 'p',
+        text: 'Reiki nivel 1 es la puerta de entrada más habitual para empezar a practicar. Está pensado para personas sin experiencia previa y suele enfocarse en comprender los principios básicos del sistema, la autoaplicación y las primeras posiciones de manos para trabajar sobre uno mismo y, según la escuela, también sobre otras personas.',
+      },
+      {
+        type: 'p',
+        text: 'Para quien está evaluando estudiar, la duda principal suele ser si hace falta tener conocimientos previos o una sensibilidad “especial”. La respuesta más seria es no. Reiki nivel 1 está diseñado justamente para comenzar desde una base simple y ordenada.',
+      },
+      {
+        type: 'h2',
+        text: 'Qué se aprende en reiki nivel 1',
+      },
+      {
+        type: 'ul',
+        items: [
+          'los principios fundamentales del reiki',
+          'la historia básica del sistema Usui',
+          'cómo canalizar energía de forma inicial',
+          'posiciones de manos para auto tratamiento',
+          'prácticas para relajar, centrar y ordenar la energía',
+          'cuidados básicos para incorporar la técnica con criterio',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Cómo es una iniciación o sintonización',
+      },
+      {
+        type: 'p',
+        text: 'En muchas formaciones de reiki nivel 1 se realiza una sintonización o iniciación. Ese momento se entiende como una apertura simbólica y energética dentro del sistema que se está enseñando. Cada escuela lo explica de forma distinta, pero en términos prácticos marca el inicio formal de la práctica.',
+      },
+      {
+        type: 'p',
+        text: 'Lo importante es no cargar esa instancia con expectativas exageradas. Para algunas personas es una experiencia muy movilizante y para otras es más sutil. Ninguna de las dos vivencias invalida el aprendizaje.',
+      },
+      {
+        type: 'h2',
+        text: 'Para quién es reiki nivel 1',
+      },
+      {
+        type: 'p',
+        text: 'Este nivel suele ser adecuado para personas que buscan una herramienta de autocuidado, quieren iniciarse en prácticas energéticas o sienten interés por acompañar su bienestar desde una perspectiva más integral. También es un buen punto de partida para quienes luego desean profundizar en niveles superiores.',
+      },
+      {
+        type: 'h2',
+        text: 'Qué expectativas conviene tener',
+      },
+      {
+        type: 'p',
+        text: 'La expectativa correcta no es “salir convertido en experto”, sino salir con una base práctica para empezar a entrenar. Como ocurre con cualquier disciplina, el verdadero avance aparece cuando la técnica se incorpora con constancia y observación, no solo con entusiasmo inicial.',
+      },
+      {
+        type: 'h2',
+        text: 'Errores comunes al empezar',
+      },
+      {
+        type: 'ul',
+        items: [
+          'esperar resultados instantáneos en todos los casos',
+          'confundir la formación con una solución mágica',
+          'no sostener práctica personal después del curso',
+          'comparar la propia experiencia con la de otras personas',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Reiki nivel 1 como primer paso sólido',
+      },
+      {
+        type: 'p',
+        text: 'Si te interesa empezar con una práctica accesible y progresiva, reiki nivel 1 es un muy buen primer paso. Te permite conocer la lógica del sistema, entrenar autoaplicación y desarrollar una relación más consciente con el bienestar, la energía y la presencia.',
+      },
+    ],
+  },
+  {
+    slug: 'beneficios-del-reiki',
+    title: 'Beneficios del Reiki: Qué Puede Aportar y Qué No Conviene Esperar',
+    description:
+      'Conocé los beneficios del reiki más mencionados, en qué contextos suele ayudar y qué expectativas conviene evitar para acercarse a esta práctica con criterio.',
+    date: '2026-05-02',
+    category: 'reiki',
+    readTime: 6,
+    content: [
+      {
+        type: 'p',
+        text: 'Cuando alguien busca beneficios del reiki, muchas veces encuentra respuestas exageradas o demasiado vagas. Una forma más útil de abordarlo es distinguir entre lo que muchas personas reportan como experiencia de bienestar y lo que no debería prometerse como resultado garantizado.',
+      },
+      {
+        type: 'p',
+        text: 'Reiki suele valorarse sobre todo por su capacidad para generar relajación, bajar la intensidad mental y abrir un espacio de pausa. En contextos de estrés sostenido, esa función ya puede ser muy relevante.',
+      },
+      {
+        type: 'h2',
+        text: 'Beneficios del reiki que más suelen mencionarse',
+      },
+      {
+        type: 'ul',
+        items: [
+          'sensación de calma y relajación profunda',
+          'reducción de tensión emocional',
+          'mejor conexión con el cuerpo y la respiración',
+          'mayor claridad interna en períodos de sobrecarga',
+          'acompañamiento complementario en procesos de autocuidado',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Por qué puede resultar valioso',
+      },
+      {
+        type: 'p',
+        text: 'En la práctica cotidiana, muchas personas viven aceleradas, desconectadas del cuerpo y con poca capacidad de pausa. Reiki puede ser valioso justamente porque crea un contexto donde esa pausa sucede de forma intencional. A veces el beneficio no es espectacular, pero sí concreto: salir más regulado, menos tenso y con mejor disposición interna.',
+      },
+      {
+        type: 'h2',
+        text: 'Qué no conviene esperar del reiki',
+      },
+      {
+        type: 'ul',
+        items: [
+          'que reemplace atención médica o psicológica',
+          'que produzca el mismo efecto en todas las personas',
+          'que resuelva por sí solo conflictos profundos o crónicos',
+          'que funcione como promesa inmediata de transformación total',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Cómo sacar más provecho de la práctica',
+      },
+      {
+        type: 'p',
+        text: 'Reiki suele rendir mejor cuando se integra con hábitos de cuidado más amplios: descanso, alimentación razonable, espacios de reflexión, trabajo emocional y una mirada realista sobre lo que cada herramienta puede aportar. En ese marco, puede convertirse en una práctica muy útil y sostenible.',
+      },
+      {
+        type: 'h2',
+        text: 'Una mirada más seria sobre sus beneficios',
+      },
+      {
+        type: 'p',
+        text: 'La forma más madura de acercarse al reiki es valorar lo que sí puede ofrecer sin inflarlo. Si buscás una práctica complementaria para relajarte, ordenar la energía y cultivar bienestar con más conciencia, sus beneficios pueden ser reales y consistentes. Si buscás una solución mágica, probablemente la expectativa esté mal planteada desde el principio.',
+      },
+    ],
+  },
+  {
     slug: 'tirada-de-tarot-de-3-cartas',
     title: 'Tirada de Tarot de 3 Cartas: Cómo Hacerla e Interpretarla',
     description:

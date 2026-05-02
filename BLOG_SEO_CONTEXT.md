@@ -30,6 +30,11 @@ Cluster ya cargado:
 - `como-aprender-tarot-desde-cero`
 - `arcanos-mayores-significado`
 - `tirada-de-tarot-de-3-cartas`
+- `que-es-reiki`
+- `reiki-nivel-1`
+- `beneficios-del-reiki`
+- `como-hacer-auto-reiki`
+- `como-es-una-sesion-de-reiki`
 
 ## Trabajo realizado
 
@@ -56,6 +61,12 @@ Se agregó `getRelatedPosts()` para mostrar artículos relacionados de la misma 
 Archivo:
 
 - `frontend/src/lib/blogPosts.js`
+
+Además, el bloque de relacionados y el CTA final del post ahora son dinámicos por categoría, para no quedar fijos en tarot al abrir clusters como reiki.
+
+Archivo:
+
+- `frontend/src/pages/BlogPost.jsx`
 
 ### 3. URLs absolutas
 
@@ -114,9 +125,9 @@ Las URLs de posts se extraen de:
 
 1. `como abrir los chakras`
 2. `chakras significado`
-3. `que es reiki`
-4. `reiki nivel 1`
-5. `como calcular mi numero de vida`
+3. `como calcular mi numero de vida`
+4. `numeros maestros numerologia`
+5. `como meditar en casa`
 
 ## Protocolo para futuros artículos
 

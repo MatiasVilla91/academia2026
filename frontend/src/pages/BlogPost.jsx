@@ -3,6 +3,25 @@ import { Helmet } from 'react-helmet-async';
 import { getPost, getRelatedPosts } from '../lib/blogPosts';
 import { SITE_NAME, SITE_URL } from '../lib/site';
 
+const categoryContent = {
+  tarot: {
+    relatedTitle: 'Seguí leyendo sobre tarot',
+    ctaTitle: '¿Querés profundizar en el tarot?',
+    ctaText:
+      'En Academia Astral encontrás cursos completos de tarot para todos los niveles, con instructores especializados.',
+    ctaLabel: 'Ver cursos de tarot',
+    ctaHref: '/categoria/tarot',
+  },
+  reiki: {
+    relatedTitle: 'Seguí leyendo sobre reiki',
+    ctaTitle: '¿Querés profundizar en el reiki?',
+    ctaText:
+      'En Academia Astral encontrás cursos de reiki para empezar desde cero o avanzar en tu práctica con una base más sólida.',
+    ctaLabel: 'Ver cursos de reiki',
+    ctaHref: '/categoria/reiki',
+  },
+};
+
 function renderBlock(block, i) {
   switch (block.type) {
     case 'h2':
@@ -46,6 +65,14 @@ export default function BlogPost() {
 
   const canonicalUrl = `${SITE_URL}/blog/${post.slug}`;
   const relatedPosts = getRelatedPosts(post);
+  const currentCategoryContent = categoryContent[post.category] || {
+    relatedTitle: 'Seguí leyendo en el blog',
+    ctaTitle: '¿Querés seguir profundizando?',
+    ctaText:
+      'En Academia Astral encontrás más contenidos y cursos para avanzar con una base más clara en esta temática.',
+    ctaLabel: 'Explorar categoría',
+    ctaHref: `/categoria/${post.category}`,
+  };
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -114,7 +141,9 @@ export default function BlogPost() {
 
         {relatedPosts.length > 0 && (
           <section className="mt-14">
-            <h2 className="font-display text-2xl text-white mb-5">Seguí leyendo sobre tarot</h2>
+            <h2 className="font-display text-2xl text-white mb-5">
+              {currentCategoryContent.relatedTitle}
+            </h2>
             <div className="grid gap-4">
               {relatedPosts.map((related) => (
                 <Link
@@ -133,17 +162,14 @@ export default function BlogPost() {
         <div className="mt-14 bg-[#140D28] border border-[#7C3AED]/30 rounded-xl p-8 text-center">
           <span className="text-[#D4AF37] text-2xl">✦</span>
           <h3 className="font-display text-2xl text-white mt-3 mb-2">
-            ¿Querés profundizar en el tarot?
+            {currentCategoryContent.ctaTitle}
           </h3>
-          <p className="text-gray-400 mb-6">
-            En Academia Astral encontrás cursos completos de tarot para todos los niveles, con
-            instructores especializados.
-          </p>
+          <p className="text-gray-400 mb-6">{currentCategoryContent.ctaText}</p>
           <Link
-            to="/categoria/tarot"
+            to={currentCategoryContent.ctaHref}
             className="inline-block bg-[#D4AF37] text-[#0F0A1E] font-semibold px-6 py-3 rounded-lg hover:bg-[#c9a227] transition-colors"
           >
-            Ver cursos de tarot
+            {currentCategoryContent.ctaLabel}
           </Link>
         </div>
       </article>
