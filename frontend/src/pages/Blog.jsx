@@ -1,16 +1,23 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogPosts } from '../lib/blogPosts';
+import { SITE_NAME, SITE_URL } from '../lib/site';
 
 export default function Blog() {
+  const canonicalUrl = `${SITE_URL}/blog`;
+  const description =
+    'Artículos sobre tarot, chakras, ángeles, numerología y espiritualidad para guiarte en tu camino de crecimiento interior.';
+
   return (
     <div className="min-h-screen bg-[#0F0A1E] py-12 px-4">
       <Helmet>
-        <title>Blog de Tarot y Esoterismo | Academia Astral</title>
-        <meta
-          name="description"
-          content="Artículos sobre tarot, chakras, ángeles, numerología y espiritualidad para guiarte en tu camino de crecimiento interior."
-        />
+        <title>Blog de Tarot y Esoterismo | {SITE_NAME}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`Blog de Tarot y Esoterismo | ${SITE_NAME}`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
       </Helmet>
 
       <div className="max-w-4xl mx-auto">

@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { getPost } from '../lib/blogPosts';
+import { getPost, getRelatedPosts } from '../lib/blogPosts';
+import { SITE_NAME, SITE_URL } from '../lib/site';
 
 function renderBlock(block, i) {
   switch (block.type) {
@@ -43,6 +44,29 @@ export default function BlogPost() {
 
   if (!post) return <Navigate to="/blog" replace />;
 
+  const canonicalUrl = `${SITE_URL}/blog/${post.slug}`;
+  const relatedPosts = getRelatedPosts(post);
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    articleSection: post.category,
+    inLanguage: 'es',
+    mainEntityOfPage: canonicalUrl,
+    url: canonicalUrl,
+    author: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+    },
+  };
+
   const formattedDate = new Date(post.date).toLocaleDateString('es-AR', {
     year: 'numeric',
     month: 'long',
@@ -52,12 +76,16 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-[#0F0A1E] py-12 px-4">
       <Helmet>
-        <title>{post.title} | Academia Astral</title>
+        <title>{post.title} | {SITE_NAME}</title>
         <meta name="description" content={post.description} />
-        <meta property="og:title" content={`${post.title} | Academia Astral`} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`${post.title} | ${SITE_NAME}`} />
         <meta property="og:description" content={post.description} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="article:published_time" content={post.date} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
       </Helmet>
 
       <article className="max-w-3xl mx-auto">
@@ -83,6 +111,24 @@ export default function BlogPost() {
         </header>
 
         <div>{post.content.map((block, i) => renderBlock(block, i))}</div>
+
+        {relatedPosts.length > 0 && (
+          <section className="mt-14">
+            <h2 className="font-display text-2xl text-white mb-5">Seguí leyendo sobre tarot</h2>
+            <div className="grid gap-4">
+              {relatedPosts.map((related) => (
+                <Link
+                  key={related.slug}
+                  to={`/blog/${related.slug}`}
+                  className="block rounded-xl border border-[#7C3AED]/20 bg-[#140D28] p-5 hover:border-[#D4AF37]/40 transition-colors"
+                >
+                  <h3 className="font-display text-xl text-white mb-2">{related.title}</h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">{related.description}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="mt-14 bg-[#140D28] border border-[#7C3AED]/30 rounded-xl p-8 text-center">
           <span className="text-[#D4AF37] text-2xl">✦</span>
