@@ -124,4 +124,4 @@ Todos los demás (sin highlights ni instructorBio todavía).
 - Dev server: `npm run dev` desde `frontend/`
 - Catálogo local activo cuando `import.meta.env.DEV === true` o `VITE_USE_LOCAL_CATALOG=1`
 - Categorías se derivan dinámicamente del catálogo (no hay lista fija en el frontend)
-- i18n: `frontend/src/i18n/es.js` y `pt.js` — las categorías tienen nombre en ambos idiomas
+- Nombres de categorías: `frontend/src/lib/categories.js` — mapa slug → nombre en español

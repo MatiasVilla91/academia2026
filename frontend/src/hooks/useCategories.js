@@ -11,7 +11,7 @@ export default function useCategories(params = {}) {
       .then(setCategories)
       .catch(() => setCategories([]))
       .finally(() => setIsLoading(false));
-  }, [params.language]);
+  }, []);
 
   return { categories, isLoading };
 }

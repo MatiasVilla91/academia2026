@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import useCourse from '../hooks/useCourse';
 import useCourses from '../hooks/useCourses';
 import CourseCard from '../components/CourseCard';
 import { trackClick } from '../lib/api';
-import { useLang, useT } from '../i18n';
+import { getCategoryName } from '../lib/categories';
 import { getCourseImageSrc } from '../lib/courseImage';
 import { SITE_URL } from '../lib/site';
 
@@ -34,8 +34,6 @@ function DetailSkeleton() {
 
 export default function CourseDetail() {
   const { slug } = useParams();
-  const t = useT();
-  const { lang } = useLang();
   const { course, isLoading, error } = useCourse(slug);
   const [imgError, setImgError] = useState(false);
   const [showSticky, setShowSticky] = useState(false);
@@ -48,15 +46,10 @@ export default function CourseDetail() {
 
   const { items: related } = useCourses({
     category: course?.category || '',
-    language: lang,
     limit: 5,
     sort: 'rating',
     enabled: !!course?.category,
   });
-
-  if (!isLoading && course && course.language !== lang) {
-    return <Navigate to="/" replace />;
-  }
 
   const relatedCourses = related.filter((c) => c._id !== course?._id).slice(0, 4);
 
@@ -73,7 +66,7 @@ export default function CourseDetail() {
       <div className="max-w-4xl mx-auto px-4 py-24 text-center">
         <p className="text-gray-500">Curso no encontrado.</p>
         <Link to="/" className="mt-4 inline-block text-[#7C3AED] hover:text-[#9D6FFC] text-sm">
-          ← {lang === 'es' ? 'Volver al catálogo' : 'Voltar ao catálogo'}
+          ← Volver al catálogo
         </Link>
       </div>
     );
@@ -104,7 +97,7 @@ export default function CourseDetail() {
             to="/"
             className="text-gray-600 hover:text-[#D4AF37] text-sm transition-colors mb-8 inline-block"
           >
-            ← {lang === 'es' ? 'Volver al catálogo' : 'Voltar ao catálogo'}
+            ← Volver al catálogo
           </Link>
 
           <div className="flex flex-col md:flex-row gap-10 mt-2">
@@ -133,7 +126,7 @@ export default function CourseDetail() {
                   to={`/categoria/${course.category}`}
                   className="rounded-full border border-[#7C3AED]/40 bg-[#7C3AED]/10 px-3 py-1 text-xs text-[#9D6FFC] hover:bg-[#7C3AED]/20 transition-colors"
                 >
-                  {t(`categories.${course.category}`)}
+                  {getCategoryName(course.category)}
                 </Link>
               </div>
 
@@ -143,7 +136,7 @@ export default function CourseDetail() {
 
               {course.instructor && (
                 <p className="text-gray-400 text-sm mb-5">
-                  {t('course.by')} <span className="text-gray-200 font-medium">{course.instructor}</span>
+                  por <span className="text-gray-200 font-medium">{course.instructor}</span>
                 </p>
               )}
 
@@ -154,12 +147,12 @@ export default function CourseDetail() {
                     <span className="text-[#D4AF37] font-bold text-lg">{course.rating.toFixed(1)}</span>
                     {course.reviewsCount > 0 && (
                       <span className="text-gray-500 text-sm">
-                        ({course.reviewsCount} {t('course.reviews')})
+                        ({course.reviewsCount} reseñas)
                       </span>
                     )}
                   </>
                 ) : (
-                  <span className="text-gray-600 text-sm">{t('course.noRating')}</span>
+                  <span className="text-gray-600 text-sm">Sin rating</span>
                 )}
               </div>
 
@@ -168,7 +161,7 @@ export default function CourseDetail() {
                   ARS {course.priceARS.toLocaleString('es-AR')}
                 </p>
               ) : (
-                <p className="text-gray-500 text-base mb-6">{t('course.consultPrice')}</p>
+                <p className="text-gray-500 text-base mb-6">Precio a consultar</p>
               )}
 
               <button
@@ -176,11 +169,11 @@ export default function CourseDetail() {
                 disabled={!buyUrl}
                 className="w-full py-4 bg-[#7C3AED] hover:bg-[#6D28D9] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-all shadow-[0_0_40px_rgba(124,58,237,0.4)] hover:shadow-[0_0_60px_rgba(124,58,237,0.6)] text-lg mb-3"
               >
-                {t('course.buyNow')}
+                Quiero este curso
               </button>
 
               <p className="text-center text-gray-600 text-xs flex items-center justify-center gap-1.5">
-                🔒 {t('course.guaranteeBadge')}
+                🔒 Pago seguro · Garantía de 7 días Hotmart
               </p>
             </div>
           </div>
@@ -192,7 +185,7 @@ export default function CourseDetail() {
         {/* ── QUÉ VAS A APRENDER ───────────────────────────────── */}
         {hasHighlights && (
           <section className="py-14 border-b border-[#7C3AED]/10">
-            <h2 className="font-display text-2xl text-[#D4AF37] mb-8">{t('course.whatYouLearn')}</h2>
+            <h2 className="font-display text-2xl text-[#D4AF37] mb-8">Qué vas a aprender</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {course.highlights.map((item, i) => (
                 <div
@@ -210,7 +203,7 @@ export default function CourseDetail() {
         {/* ── DESCRIPCIÓN ──────────────────────────────────────── */}
         {course.description && (
           <section className="py-14 border-b border-[#7C3AED]/10">
-            <h2 className="font-display text-2xl text-[#D4AF37] mb-5">{t('course.description')}</h2>
+            <h2 className="font-display text-2xl text-[#D4AF37] mb-5">Descripción</h2>
             <p className="text-gray-300 leading-relaxed whitespace-pre-line text-base">
               {course.description}
             </p>
@@ -220,7 +213,7 @@ export default function CourseDetail() {
         {/* ── INSTRUCTOR ───────────────────────────────────────── */}
         {hasInstructorBio && (
           <section className="py-14 border-b border-[#7C3AED]/10">
-            <h2 className="font-display text-2xl text-[#D4AF37] mb-6">{t('course.aboutInstructor')}</h2>
+            <h2 className="font-display text-2xl text-[#D4AF37] mb-6">Sobre el instructor</h2>
             <div className="bg-[#140D28] border border-[#7C3AED]/20 rounded-2xl p-6 flex flex-col sm:flex-row gap-5 items-start">
               <div className="w-16 h-16 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/30 flex items-center justify-center flex-shrink-0 text-2xl">
                 ✨
@@ -238,8 +231,10 @@ export default function CourseDetail() {
           <div className="bg-gradient-to-r from-[#140D28] to-[#1a0f3a] border border-[#D4AF37]/20 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row gap-6 items-center">
             <div className="text-5xl flex-shrink-0">🛡️</div>
             <div>
-              <h3 className="font-display text-xl text-[#D4AF37] mb-2">{t('course.guaranteeTitle')}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{t('course.guaranteeText')}</p>
+              <h3 className="font-display text-xl text-[#D4AF37] mb-2">Garantía de 7 días</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Comprás con total confianza. Si dentro de los primeros 7 días no estás satisfecho/a con el curso, Hotmart te reintegra el dinero sin preguntas.
+              </p>
             </div>
           </div>
         </section>
@@ -248,7 +243,7 @@ export default function CourseDetail() {
         <section className="py-14 border-b border-[#7C3AED]/10">
           <div className="text-center">
             <h2 className="font-display text-2xl md:text-3xl text-white mb-3">
-              {t('course.readyToStart')}
+              ¿Listo/a para comenzar tu camino?
             </h2>
             {course.priceARS != null && (
               <p className="text-[#D4AF37] text-3xl font-bold mb-6">
@@ -260,10 +255,10 @@ export default function CourseDetail() {
               disabled={!buyUrl}
               className="px-10 py-4 bg-[#7C3AED] hover:bg-[#6D28D9] disabled:opacity-40 text-white font-bold rounded-xl transition-all shadow-[0_0_40px_rgba(124,58,237,0.4)] hover:shadow-[0_0_60px_rgba(124,58,237,0.6)] text-lg"
             >
-              {t('course.buyNow')}
+              Quiero este curso
             </button>
             <p className="text-gray-600 text-xs mt-3 flex items-center justify-center gap-1.5">
-              🔒 {t('course.guaranteeBadge')}
+              🔒 Pago seguro · Garantía de 7 días Hotmart
             </p>
           </div>
         </section>
@@ -272,12 +267,12 @@ export default function CourseDetail() {
         {relatedCourses.length > 0 && (
           <section className="py-14">
             <div className="flex items-center justify-between gap-4 mb-6 flex-wrap">
-              <h2 className="font-display text-2xl text-[#D4AF37]">{t('course.relatedCourses')}</h2>
+              <h2 className="font-display text-2xl text-[#D4AF37]">Cursos relacionados</h2>
               <Link
                 to={`/categoria/${course.category}`}
                 className="text-sm text-gray-400 hover:text-white transition-colors"
               >
-                {t('course.seeCategory')}
+                Explorar categoría
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -301,7 +296,7 @@ export default function CourseDetail() {
             onClick={handleBuy}
             className="flex-1 py-3 bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold rounded-xl transition-all text-sm"
           >
-            {t('course.buyNow')}
+            Quiero este curso
           </button>
         </div>
       )}

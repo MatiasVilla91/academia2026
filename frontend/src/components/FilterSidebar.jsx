@@ -1,5 +1,5 @@
 import useCategories from '../hooks/useCategories';
-import { useLang, useT } from '../i18n';
+import { getCategoryName } from '../lib/categories';
 
 const ALL_CATEGORIES = [
   'tarot',
@@ -22,40 +22,38 @@ const inputCls =
 const labelCls = 'text-gray-500 text-xs uppercase tracking-wider mb-2 block';
 
 export default function FilterSidebar({ filters, onChange }) {
-  const t = useT();
-  const { lang } = useLang();
-  const { categories } = useCategories({ language: lang });
+  const { categories } = useCategories();
 
   const totalAll = categories.reduce((s, c) => s + c.count, 0);
   const countFor = (cat) => categories.find((c) => c.category === cat)?.count ?? 0;
 
   return (
     <aside className="bg-[#1A1030] rounded-xl p-5 border border-[#7C3AED]/30 space-y-5">
-      <h2 className="font-display text-[#D4AF37] text-xl">{t('filters.title')}</h2>
+      <h2 className="font-display text-[#D4AF37] text-xl">Filtros</h2>
 
       <input
         type="text"
-        placeholder={t('filters.search')}
+        placeholder="Buscar cursos..."
         value={filters.search}
         onChange={(e) => onChange({ search: e.target.value, page: 1 })}
         className={inputCls}
       />
 
       <div>
-        <label className={labelCls}>{t('filters.sort')}</label>
+        <label className={labelCls}>Ordenar por</label>
         <select
           value={filters.sort}
           onChange={(e) => onChange({ sort: e.target.value, page: 1 })}
           className={selectCls}
         >
-          <option value="newest">{t('filters.sortNewest')}</option>
-          <option value="rating">{t('filters.sortRating')}</option>
-          <option value="clicks">{t('filters.sortClicks')}</option>
+          <option value="newest">Más recientes</option>
+          <option value="rating">Mejor rating</option>
+          <option value="clicks">Más populares</option>
         </select>
       </div>
 
       <div>
-        <label className={labelCls}>{t('filters.category')}</label>
+        <label className={labelCls}>Categoría</label>
         <div className="space-y-0.5">
           <button
             onClick={() => onChange({ category: '', page: 1 })}
@@ -63,7 +61,7 @@ export default function FilterSidebar({ filters, onChange }) {
               !filters.category ? 'bg-[#7C3AED] text-white' : 'text-gray-300 hover:bg-[#251850]'
             }`}
           >
-            <span>{t('filters.allCategories')}</span>
+            <span>Todas</span>
             <span className="text-xs opacity-60">{totalAll}</span>
           </button>
           {ALL_CATEGORIES.map((cat) => (
@@ -76,7 +74,7 @@ export default function FilterSidebar({ filters, onChange }) {
                   : 'text-gray-400 hover:bg-[#251850]'
               }`}
             >
-              <span>{t(`categories.${cat}`)}</span>
+              <span>{getCategoryName(cat)}</span>
               <span className="text-xs opacity-60">{countFor(cat)}</span>
             </button>
           ))}
@@ -84,20 +82,13 @@ export default function FilterSidebar({ filters, onChange }) {
       </div>
 
       <div>
-        <label className={labelCls}>{t('filters.language')}</label>
-        <div className="rounded-lg border border-[#7C3AED]/20 bg-[#140D28] px-3 py-2 text-sm text-gray-300">
-          {lang === 'es' ? `🇪🇸 ${t('language.es')}` : `🇧🇷 ${t('language.pt')}`}
-        </div>
-      </div>
-
-      <div>
-        <label className={labelCls}>{t('filters.minRating')}</label>
+        <label className={labelCls}>Rating mínimo</label>
         <select
           value={filters.minRating}
           onChange={(e) => onChange({ minRating: e.target.value, page: 1 })}
           className={selectCls}
         >
-          <option value="">{t('filters.any')}</option>
+          <option value="">Cualquiera</option>
           <option value="3">3+ ★</option>
           <option value="4">4+ ★</option>
           <option value="4.5">4.5+ ★</option>
@@ -105,13 +96,13 @@ export default function FilterSidebar({ filters, onChange }) {
       </div>
 
       <div>
-        <label className={labelCls}>{t('filters.priceRange')}</label>
+        <label className={labelCls}>Rango de precio</label>
         <div className="grid grid-cols-2 gap-3">
           <input
             type="number"
             min="0"
             step="1"
-            placeholder={t('filters.minPrice')}
+            placeholder="Precio mín."
             value={filters.minPrice}
             onChange={(e) => onChange({ minPrice: e.target.value, page: 1 })}
             className={inputCls}
@@ -120,7 +111,7 @@ export default function FilterSidebar({ filters, onChange }) {
             type="number"
             min="0"
             step="1"
-            placeholder={t('filters.maxPrice')}
+            placeholder="Precio máx."
             value={filters.maxPrice}
             onChange={(e) => onChange({ maxPrice: e.target.value, page: 1 })}
             className={inputCls}
@@ -142,7 +133,7 @@ export default function FilterSidebar({ filters, onChange }) {
         }
         className="w-full py-2 border border-[#7C3AED]/40 hover:border-[#7C3AED] text-gray-500 hover:text-white rounded-lg text-sm transition-colors"
       >
-        {t('filters.clearFilters')}
+        Limpiar filtros
       </button>
     </aside>
   );

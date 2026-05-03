@@ -8,7 +8,7 @@ import FilterSidebar from '../components/FilterSidebar';
 import Pagination from '../components/Pagination';
 import Loading from '../components/Loading';
 import EmptyState from '../components/EmptyState';
-import { useLang, useT } from '../i18n';
+import { getCategoryName } from '../lib/categories';
 import { SITE_NAME, SITE_URL } from '../lib/site';
 
 const INITIAL_FILTERS = {
@@ -21,39 +21,30 @@ const INITIAL_FILTERS = {
   page: 1,
 };
 
+const META_TITLE = `${SITE_NAME} — Cursos Esotéricos en Español`;
+const META_DESC = 'Cursos esotéricos en español para expandir tu conciencia, explorar nuevas prácticas y encontrar tu próxima línea de estudio.';
+
 export default function Home() {
-  const t = useT();
-  const { lang } = useLang();
   const [filters, setFilters] = useState(INITIAL_FILTERS);
   const [showFilters, setShowFilters] = useState(false);
-  const { categories } = useCategories({ language: lang });
+  const { categories } = useCategories();
 
   const update = (partial) => setFilters((f) => ({ ...f, ...partial }));
   const clearAll = () => setFilters(INITIAL_FILTERS);
 
   const { items, total, totalPages, isLoading } = useCourses({
     ...filters,
-    language: lang,
     limit: 20,
   });
-
-  const metaDesc =
-    lang === 'es'
-      ? 'Cursos esotéricos en español para expandir tu conciencia, explorar nuevas prácticas y encontrar tu próxima línea de estudio.'
-      : 'Cursos esotéricos em português para expandir sua consciência, explorar novas práticas e encontrar sua próxima linha de estudo.';
-  const metaTitle =
-    lang === 'es'
-      ? `${SITE_NAME} — Cursos Esotéricos en Español`
-      : `${SITE_NAME} — Cursos Esotéricos em Português`;
 
   return (
     <>
       <Helmet>
-        <title>{metaTitle}</title>
-        <meta name="description" content={metaDesc} />
+        <title>{META_TITLE}</title>
+        <meta name="description" content={META_DESC} />
         <link rel="canonical" href={SITE_URL} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDesc} />
+        <meta property="og:title" content={META_TITLE} />
+        <meta property="og:description" content={META_DESC} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
       </Helmet>
@@ -64,9 +55,7 @@ export default function Home() {
             Academia Astral
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            {lang === 'es'
-              ? 'Cursos esotéricos en español para expandir tu conciencia, explorar nuevas prácticas y encontrar tu próxima línea de estudio.'
-              : 'Cursos esotéricos em português para expandir sua consciência, explorar novas práticas e encontrar sua próxima linha de estudo.'}
+            Cursos esotéricos en español para expandir tu conciencia, explorar nuevas prácticas y encontrar tu próxima línea de estudio.
           </p>
 
           {categories.length > 0 && (
@@ -77,7 +66,7 @@ export default function Home() {
                   to={`/categoria/${item.category}`}
                   className="inline-flex items-center gap-2 rounded-full border border-[#7C3AED]/30 bg-[#140D28] px-3 py-1.5 text-sm text-gray-300 hover:border-[#7C3AED] hover:text-white transition-colors"
                 >
-                  <span>{t(`categories.${item.category}`)}</span>
+                  <span>{getCategoryName(item.category)}</span>
                   <span className="text-xs text-gray-500">{item.count}</span>
                 </Link>
               ))}
@@ -93,7 +82,7 @@ export default function Home() {
             className="w-full flex items-center justify-center gap-2 py-2.5 border border-[#7C3AED]/40 hover:border-[#7C3AED] text-gray-300 rounded-lg text-sm transition-colors"
           >
             <span>⚙</span>
-            {showFilters ? t('filters.hideFilters') : t('filters.showFilters')}
+            {showFilters ? 'Ocultar filtros' : 'Mostrar filtros'}
             <span>{showFilters ? '▲' : '▼'}</span>
           </button>
           {showFilters && (
@@ -116,13 +105,6 @@ export default function Home() {
                 <p className="text-gray-500 text-sm">
                   {isLoading ? '…' : `${total} ${total === 1 ? 'curso' : 'cursos'}`}
                 </p>
-                {!filters.category && (
-                  <p className="text-gray-600 text-xs mt-1">
-                    {lang === 'es'
-                      ? 'Mostrando cursos en español según el idioma activo.'
-                      : 'Mostrando cursos em português conforme o idioma ativo.'}
-                  </p>
-                )}
               </div>
 
               {filters.category && (
@@ -130,7 +112,7 @@ export default function Home() {
                   to={`/categoria/${filters.category}`}
                   className="text-sm text-[#D4AF37] hover:text-white transition-colors"
                 >
-                  {lang === 'es' ? 'Ver categoría seleccionada' : 'Ver categoria selecionada'}
+                  Ver categoría seleccionada
                 </Link>
               )}
             </div>

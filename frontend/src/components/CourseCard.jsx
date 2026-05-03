@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useT } from '../i18n';
+import { getCategoryName } from '../lib/categories';
 import { getCourseImageSrc } from '../lib/courseImage';
 
 const LANG_FLAGS = { es: 'ES', pt: 'PT', en: 'EN' };
@@ -35,7 +35,6 @@ function MetaBadge({ children, tone = 'default' }) {
 }
 
 export default function CourseCard({ course }) {
-  const t = useT();
   const [imgError, setImgError] = useState(false);
 
   const hasRating = course.rating != null;
@@ -59,7 +58,7 @@ export default function CourseCard({ course }) {
         />
 
         <div className="absolute inset-x-0 top-0 flex items-start justify-between p-2">
-          <MetaBadge>{t(`categories.${course.category}`)}</MetaBadge>
+          <MetaBadge>{getCategoryName(course.category)}</MetaBadge>
           {course.language && (
             <MetaBadge tone="muted">
               {LANG_FLAGS[course.language] || course.language.toUpperCase()}
@@ -71,14 +70,12 @@ export default function CourseCard({ course }) {
       <div className="p-4 flex flex-col flex-1">
         <div className="flex items-center justify-between gap-3 mb-2">
           {course.workloadHours > 0 ? (
-            <p className="text-xs text-gray-500">
-              {course.workloadHours} {t('course.hours')}
-            </p>
+            <p className="text-xs text-gray-500">{course.workloadHours} hs</p>
           ) : (
-            <p className="text-xs text-gray-600">{t('course.noWorkload')}</p>
+            <p className="text-xs text-gray-600">Duración no indicada</p>
           )}
 
-          {!hasPrice && <MetaBadge tone="warn">{t('course.noPrice')}</MetaBadge>}
+          {!hasPrice && <MetaBadge tone="warn">Sin precio</MetaBadge>}
         </div>
 
         <h3 className="font-display text-[#D4AF37] text-lg leading-snug mb-1 line-clamp-2 min-h-[3.5rem] group-hover:text-[#E6C86A] transition-colors">
@@ -87,7 +84,7 @@ export default function CourseCard({ course }) {
 
         {course.instructor && (
           <p className="text-gray-500 text-xs mb-3 line-clamp-1">
-            {t('course.by')} {course.instructor}
+            por {course.instructor}
           </p>
         )}
 
@@ -98,14 +95,14 @@ export default function CourseCard({ course }) {
               <span className="text-gray-500 text-xs">({course.rating.toFixed(1)})</span>
               {hasReviews ? (
                 <span className="text-gray-600 text-xs">
-                  {course.reviewsCount} {t('course.reviews')}
+                  {course.reviewsCount} reseñas
                 </span>
               ) : (
-                <MetaBadge tone="muted">{t('course.noReviews')}</MetaBadge>
+                <MetaBadge tone="muted">Sin reseñas</MetaBadge>
               )}
             </>
           ) : (
-            <MetaBadge tone="warn">{t('course.noRating')}</MetaBadge>
+            <MetaBadge tone="warn">Sin rating</MetaBadge>
           )}
         </div>
 
@@ -121,11 +118,11 @@ export default function CourseCard({ course }) {
               ARS {course.priceARS.toLocaleString('es-AR')}
             </p>
           ) : (
-            <p className="text-gray-500 text-sm mb-4">{t('course.consultPrice')}</p>
+            <p className="text-gray-500 text-sm mb-4">Precio a consultar</p>
           )}
 
           <div className="block w-full text-center py-2 bg-[#7C3AED] group-hover:bg-[#6D28D9] text-white rounded-lg transition-colors text-sm font-medium">
-            {t('course.viewCourse')}
+            Ver curso
           </div>
         </div>
       </div>

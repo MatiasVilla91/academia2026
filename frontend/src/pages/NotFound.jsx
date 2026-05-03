@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { useT } from '../i18n';
 import { SITE_NAME } from '../lib/site';
 
 export default function NotFound() {
-  const t = useT();
-
   return (
     <>
       <Helmet>
@@ -17,21 +14,23 @@ export default function NotFound() {
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_top,_rgba(124,58,237,0.35),_transparent_45%)]" />
         <div className="relative">
           <div className="text-7xl md:text-8xl mb-4 font-display text-[#D4AF37]/80">✦</div>
-          <p className="text-xs uppercase tracking-[0.22em] text-gray-500 mb-3">{t('notFound.kicker')}</p>
-          <h1 className="font-display text-5xl md:text-6xl text-[#D4AF37] mb-4">{t('notFound.title')}</h1>
-          <p className="text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">{t('notFound.message')}</p>
+          <p className="text-xs uppercase tracking-[0.22em] text-gray-500 mb-3">Ruta no encontrada</p>
+          <h1 className="font-display text-5xl md:text-6xl text-[#D4AF37] mb-4">404</h1>
+          <p className="text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
+            La página que buscás no existe en este plano astral o ya cambió de ubicación.
+          </p>
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <Link
               to="/"
               className="px-6 py-3 bg-[#7C3AED] hover:bg-[#6D28D9] text-white rounded-xl transition-colors font-medium"
             >
-              {t('notFound.back')}
+              Volver al inicio
             </Link>
             <Link
               to="/categoria/tarot"
               className="px-6 py-3 border border-[#7C3AED]/30 hover:border-[#7C3AED] text-gray-300 hover:text-white rounded-xl transition-colors"
             >
-              {t('notFound.explore')}
+              Explorar tarot
             </Link>
           </div>
         </div>
