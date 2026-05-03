@@ -8,6 +8,9 @@ import CourseDetail from './pages/CourseDetail';
 import CategoryPage from './pages/CategoryPage';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import CookiePolicy from './pages/CookiePolicy';
+import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
 import './index.css';
 
@@ -22,6 +25,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="categoria/:category" element={<CategoryPage />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:slug" element={<BlogPost />} />
+            <Route path="politica-privacidad" element={<PrivacyPolicy />} />
+            <Route path="politica-cookies" element={<CookiePolicy />} />
+            <Route path="terminos" element={<TermsOfService />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
