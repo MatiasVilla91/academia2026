@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import useCourses from '../hooks/useCourses';
 import useCategories from '../hooks/useCategories';
 import CourseGrid from '../components/CourseGrid';
@@ -8,6 +9,7 @@ import Pagination from '../components/Pagination';
 import Loading from '../components/Loading';
 import EmptyState from '../components/EmptyState';
 import { useLang, useT } from '../i18n';
+import { SITE_NAME, SITE_URL } from '../lib/site';
 
 const INITIAL_FILTERS = {
   search: '',
@@ -35,8 +37,27 @@ export default function Home() {
     limit: 20,
   });
 
+  const metaDesc =
+    lang === 'es'
+      ? 'Cursos esotéricos en español para expandir tu conciencia, explorar nuevas prácticas y encontrar tu próxima línea de estudio.'
+      : 'Cursos esotéricos em português para expandir sua consciência, explorar novas práticas e encontrar sua próxima linha de estudo.';
+  const metaTitle =
+    lang === 'es'
+      ? `${SITE_NAME} — Cursos Esotéricos en Español`
+      : `${SITE_NAME} — Cursos Esotéricos em Português`;
+
   return (
     <>
+      <Helmet>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={SITE_URL} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={SITE_URL} />
+      </Helmet>
+
       <div className="bg-gradient-to-b from-[#251850] to-[#0F0A1E] py-14 text-center border-b border-[#7C3AED]/20">
         <div className="max-w-5xl mx-auto px-4">
           <h1 className="font-display text-5xl md:text-6xl text-[#D4AF37] mb-3 tracking-wide">

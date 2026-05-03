@@ -7,6 +7,7 @@ import CourseCard from '../components/CourseCard';
 import { trackClick } from '../lib/api';
 import { useLang, useT } from '../i18n';
 import { getCourseImageSrc } from '../lib/courseImage';
+import { SITE_URL } from '../lib/site';
 
 const LANG_FLAGS = { es: 'ES', pt: 'PT', en: 'EN' };
 
@@ -88,10 +89,12 @@ export default function CourseDetail() {
       <Helmet>
         <title>{course.title} - Academia Astral</title>
         <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={`${SITE_URL}/curso/${slug}`} />
         {course.imageUrl && <meta property="og:image" content={course.imageUrl} />}
         <meta property="og:title" content={course.title} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/curso/${slug}`} />
       </Helmet>
 
       {/* ── HERO ─────────────────────────────────────────────── */}

@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { useT } from '../i18n';
+import { SITE_NAME } from '../lib/site';
 
 export default function NotFound() {
   const t = useT();
 
   return (
+    <>
+      <Helmet>
+        <title>Página no encontrada | {SITE_NAME}</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
     <div className="min-h-[70vh] px-4 py-16 flex items-center justify-center">
       <div className="w-full max-w-3xl rounded-3xl border border-[#7C3AED]/20 bg-gradient-to-br from-[#1A1030] to-[#0F0A1E] p-8 md:p-12 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_top,_rgba(124,58,237,0.35),_transparent_45%)]" />
@@ -30,5 +37,6 @@ export default function NotFound() {
         </div>
       </div>
     </div>
+    </>
   );
 }

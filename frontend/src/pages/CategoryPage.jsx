@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import useCourses from '../hooks/useCourses';
 import useCategories from '../hooks/useCategories';
 import CourseGrid from '../components/CourseGrid';
@@ -7,6 +8,7 @@ import Pagination from '../components/Pagination';
 import Loading from '../components/Loading';
 import EmptyState from '../components/EmptyState';
 import { useLang, useT } from '../i18n';
+import { SITE_NAME, SITE_URL } from '../lib/site';
 
 export default function CategoryPage() {
   const { category } = useParams();
@@ -25,8 +27,22 @@ export default function CategoryPage() {
 
   const siblingCategories = categories.filter((item) => item.category !== category).slice(0, 6);
 
+  const categoryName = t(`categories.${category}`);
+  const canonicalUrl = `${SITE_URL}/categoria/${category}`;
+  const metaTitle = `${categoryName} — Cursos en Español | ${SITE_NAME}`;
+  const metaDesc = `Explorá los mejores cursos de ${categoryName} en español. Encontrá tu próximo curso en ${SITE_NAME}.`;
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <Helmet>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+      </Helmet>
       <div className="mb-10 rounded-2xl border border-[#7C3AED]/20 bg-gradient-to-br from-[#1A1030] to-[#0F0A1E] p-6 md:p-8">
         <Link to="/" className="text-gray-600 hover:text-[#D4AF37] text-sm transition-colors">
           ← {lang === 'es' ? 'Inicio' : 'Início'}
