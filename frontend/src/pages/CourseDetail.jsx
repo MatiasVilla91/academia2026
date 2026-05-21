@@ -332,6 +332,26 @@ export default function CourseDetail() {
           </section>
         )}
 
+        {/* ── TESTIMONIOS ──────────────────────────────────────── */}
+        {Array.isArray(course.testimonials) && course.testimonials.length > 0 && (
+          <section className="py-14 border-b border-[#7C3AED]/10">
+            <h2 className="font-display text-2xl text-[#D4AF37] mb-2">Lo que dicen los estudiantes</h2>
+            <p className="text-gray-500 text-sm mb-8">Opiniones de personas que ya hicieron el curso.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {course.testimonials.map((t, i) => (
+                <div key={i} className="bg-[#140D28] border border-[#7C3AED]/20 rounded-2xl p-6 flex flex-col gap-3">
+                  <div className="flex items-center gap-2">
+                    <Stars rating={t.rating} size="text-base" />
+                    <span className="text-amber-400 text-sm font-semibold">{t.rating}.0</span>
+                  </div>
+                  <p className="text-gray-300 text-sm leading-relaxed italic">"{t.text}"</p>
+                  <p className="text-gray-500 text-xs font-medium">— {t.name}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* ── GARANTÍA ─────────────────────────────────────────── */}
         <section className="py-14 border-b border-[#7C3AED]/10">
           <div className="bg-gradient-to-r from-[#140D28] to-[#1a0f3a] border border-[#D4AF37]/20 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row gap-6 items-center">
