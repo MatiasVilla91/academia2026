@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import useCourse from '../hooks/useCourse';
@@ -21,6 +21,61 @@ function Stars({ rating, size = 'text-lg' }) {
     </span>
   );
 }
+
+function FAQItem({ question, answer }) {
+  const [open, setOpen] = useState(false);
+  const bodyRef = useRef(null);
+  return (
+    <div className="border-b border-[#7C3AED]/15 last:border-b-0">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left py-4 flex items-center justify-between gap-4 group"
+        aria-expanded={open}
+      >
+        <span className="text-gray-200 text-sm font-medium group-hover:text-white transition-colors">{question}</span>
+        <span
+          className={`text-[#7C3AED] flex-shrink-0 text-lg leading-none transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+        >
+          ▾
+        </span>
+      </button>
+      <div
+        ref={bodyRef}
+        className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-48 pb-4' : 'max-h-0'}`}
+      >
+        <p className="text-gray-400 text-sm leading-relaxed">{answer}</p>
+      </div>
+    </div>
+  );
+}
+
+const FAQS = [
+  {
+    question: '¿Necesito experiencia previa?',
+    answer:
+      'No. El contenido está pensado para que puedas comenzar desde cero. No necesitás conocimientos previos para aprovechar al máximo el curso.',
+  },
+  {
+    question: '¿Cuándo puedo empezar?',
+    answer:
+      'Al instante. Una vez que completás el pago, Hotmart te envía un email con los datos de acceso. En minutos ya podés estar viendo el contenido.',
+  },
+  {
+    question: '¿El pago es seguro?',
+    answer:
+      'Sí. El pago se procesa a través de Hotmart, la plataforma líder de educación online en América Latina, con encriptación SSL y múltiples medios de pago disponibles.',
+  },
+  {
+    question: '¿Qué pasa si no me gusta el curso?',
+    answer:
+      'Tenés 7 días de garantía sin preguntas. Si dentro de los primeros 7 días no estás satisfecho/a, Hotmart te reintegra el dinero completo, sin burocracia.',
+  },
+  {
+    question: '¿Por cuánto tiempo tengo acceso?',
+    answer:
+      'Podés ver el contenido a tu ritmo, cuando quieras, desde cualquier dispositivo. El acceso es prolongado y no vence en el corto plazo.',
+  },
+];
 
 function DetailSkeleton() {
   return (
@@ -134,14 +189,20 @@ export default function CourseDetail() {
                 {course.title}
               </h1>
 
+              {course.tagline && (
+                <p className="text-[#B48FE8] text-sm md:text-base leading-relaxed mb-4 font-medium">
+                  {course.tagline}
+                </p>
+              )}
+
               {course.instructor && (
                 <p className="text-gray-400 text-sm mb-5">
                   por <span className="text-gray-200 font-medium">{course.instructor}</span>
                 </p>
               )}
 
-              <div className="flex items-center gap-3 mb-6 flex-wrap">
-                {course.rating != null ? (
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
+                {course.rating != null && (
                   <>
                     <Stars rating={course.rating} size="text-xl" />
                     <span className="text-[#D4AF37] font-bold text-lg">{course.rating.toFixed(1)}</span>
@@ -151,10 +212,17 @@ export default function CourseDetail() {
                       </span>
                     )}
                   </>
-                ) : (
-                  <span className="text-gray-600 text-sm">Sin rating</span>
                 )}
               </div>
+
+              {course.reviewsCount >= 10 && (
+                <div className="flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 rounded-xl px-4 py-2.5 mb-5 w-fit">
+                  <span className="text-amber-400 text-sm">⭐</span>
+                  <span className="text-amber-300 text-xs font-medium">
+                    {course.reviewsCount} estudiantes lo valoraron con {course.rating?.toFixed(1)} estrellas
+                  </span>
+                </div>
+              )}
 
               {course.priceARS != null ? (
                 <p className="text-3xl text-[#D4AF37] font-bold mb-6">
@@ -172,9 +240,11 @@ export default function CourseDetail() {
                 Quiero este curso
               </button>
 
-              <p className="text-center text-gray-600 text-xs flex items-center justify-center gap-1.5">
-                🔒 Pago seguro · Garantía de 7 días Hotmart
-              </p>
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-1.5 mt-1">
+                <span className="text-emerald-400 text-xs font-medium">🔒 Pago seguro</span>
+                <span className="text-[#9D6FFC] text-xs font-medium">⚡ Acceso inmediato</span>
+                <span className="text-[#D4AF37] text-xs font-medium">↩ Garantía 7 días</span>
+              </div>
             </div>
           </div>
         </div>
@@ -196,6 +266,42 @@ export default function CourseDetail() {
                   <p className="text-gray-200 text-sm leading-relaxed">{item}</p>
                 </div>
               ))}
+            </div>
+          </section>
+        )}
+
+        {/* ── PARA QUIÉN ES ────────────────────────────────────── */}
+        {Array.isArray(course.targetAudience) && course.targetAudience.length > 0 && (
+          <section className="py-14 border-b border-[#7C3AED]/10">
+            <h2 className="font-display text-2xl text-[#D4AF37] mb-2">¿Para quién es este curso?</h2>
+            <p className="text-gray-500 text-sm mb-7">Este curso es para vos si...</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {course.targetAudience.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-start gap-3 bg-[#0F0A1E] border border-[#7C3AED]/15 rounded-xl p-4"
+                >
+                  <span className="text-[#D4AF37] font-bold text-sm mt-0.5 flex-shrink-0">→</span>
+                  <p className="text-gray-300 text-sm leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ── LO QUE INCLUYE ───────────────────────────────────── */}
+        {Array.isArray(course.includes) && course.includes.length > 0 && (
+          <section className="py-14 border-b border-[#7C3AED]/10">
+            <h2 className="font-display text-2xl text-[#D4AF37] mb-7">Lo que recibís</h2>
+            <div className="bg-[#140D28] border border-[#7C3AED]/20 rounded-2xl p-6">
+              <ul className="space-y-4">
+                {course.includes.map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-200 text-sm">
+                    <span className="w-6 h-6 rounded-full bg-[#7C3AED]/20 border border-[#7C3AED]/40 flex items-center justify-center flex-shrink-0 text-[#9D6FFC] text-xs font-bold">✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </section>
         )}
@@ -239,14 +345,26 @@ export default function CourseDetail() {
           </div>
         </section>
 
+        {/* ── FAQ ──────────────────────────────────────────────── */}
+        <section className="py-14 border-b border-[#7C3AED]/10">
+          <h2 className="font-display text-2xl text-[#D4AF37] mb-2">Preguntas frecuentes</h2>
+          <p className="text-gray-500 text-sm mb-8">Todo lo que necesitás saber antes de inscribirte.</p>
+          <div className="bg-[#140D28] border border-[#7C3AED]/20 rounded-2xl px-6">
+            {FAQS.map((faq, i) => (
+              <FAQItem key={i} question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
+        </section>
+
         {/* ── CTA FINAL ────────────────────────────────────────── */}
         <section className="py-14 border-b border-[#7C3AED]/10">
           <div className="text-center">
-            <h2 className="font-display text-2xl md:text-3xl text-white mb-3">
-              ¿Listo/a para comenzar tu camino?
+            <h2 className="font-display text-2xl md:text-3xl text-white mb-2">
+              ¿Listo/a para comenzar?
             </h2>
+            <p className="text-gray-500 text-sm mb-6">Accedés al instante. Aprendé a tu ritmo, cuando quieras.</p>
             {course.priceARS != null && (
-              <p className="text-[#D4AF37] text-3xl font-bold mb-6">
+              <p className="text-[#D4AF37] text-4xl font-bold mb-6">
                 ARS {course.priceARS.toLocaleString('es-AR')}
               </p>
             )}
@@ -255,11 +373,16 @@ export default function CourseDetail() {
               disabled={!buyUrl}
               className="px-10 py-4 bg-[#7C3AED] hover:bg-[#6D28D9] disabled:opacity-40 text-white font-bold rounded-xl transition-all shadow-[0_0_40px_rgba(124,58,237,0.4)] hover:shadow-[0_0_60px_rgba(124,58,237,0.6)] text-lg"
             >
-              Quiero este curso
+              Quiero este curso →
             </button>
-            <p className="text-gray-600 text-xs mt-3 flex items-center justify-center gap-1.5">
-              🔒 Pago seguro · Garantía de 7 días Hotmart
+            <p className="text-gray-500 text-xs mt-3">
+              Sin riesgo — si en 7 días no es lo que esperabas, Hotmart te devuelve el dinero completo.
             </p>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mt-3">
+              <span className="text-emerald-400 text-xs font-medium">🔒 Pago seguro</span>
+              <span className="text-[#9D6FFC] text-xs font-medium">⚡ Acceso inmediato</span>
+              <span className="text-[#D4AF37] text-xs font-medium">↩ Garantía de 7 días</span>
+            </div>
           </div>
         </section>
 

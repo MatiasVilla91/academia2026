@@ -1,7 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { getPost, getRelatedPosts } from '../lib/blogPosts';
-import { SITE_NAME, SITE_URL } from '../lib/site';
+import { SITE_NAME, SITE_URL, SITE_OG_IMAGE } from '../lib/site';
 
 const categoryContent = {
   tarot: {
@@ -19,6 +19,46 @@ const categoryContent = {
       'En Academia Astral encontrás cursos de reiki para empezar desde cero o avanzar en tu práctica con una base más sólida.',
     ctaLabel: 'Ver cursos de reiki',
     ctaHref: '/categoria/reiki',
+  },
+  angeles: {
+    relatedTitle: 'Seguí leyendo sobre ángeles',
+    ctaTitle: '¿Querés aprender a trabajar con los ángeles?',
+    ctaText:
+      'En Academia Astral encontrás formación completa en ángeles y lectura de cartas angelicales, para conectar y leer con más profundidad.',
+    ctaLabel: 'Ver curso de ángeles',
+    ctaHref: '/categoria/angeles',
+  },
+  numerologia_astrologia: {
+    relatedTitle: 'Seguí leyendo sobre numerología',
+    ctaTitle: '¿Querés aprender numerología en profundidad?',
+    ctaText:
+      'En Academia Astral encontrás cursos de numerología para descifrar tus números personales y los de las personas que te rodean.',
+    ctaLabel: 'Ver cursos de numerología',
+    ctaHref: '/categoria/numerologia_astrologia',
+  },
+  abundancia: {
+    relatedTitle: 'Seguí leyendo sobre manifestación y abundancia',
+    ctaTitle: '¿Querés aprender a manifestar con método?',
+    ctaText:
+      'En Academia Astral encontrás cursos de manifestación y abundancia con técnicas concretas para atraer lo que querés a tu vida.',
+    ctaLabel: 'Ver cursos de abundancia',
+    ctaHref: '/categoria/abundancia',
+  },
+  chakras_energia: {
+    relatedTitle: 'Seguí leyendo sobre energía y sanación',
+    ctaTitle: '¿Querés trabajar con tu energía interior?',
+    ctaText:
+      'En Academia Astral encontrás cursos de sanación energética, chakras y trabajo interior para recuperar tu equilibrio.',
+    ctaLabel: 'Ver cursos de energía',
+    ctaHref: '/categoria/chakras_energia',
+  },
+  chakras: {
+    relatedTitle: 'Seguí leyendo sobre energía y sanación',
+    ctaTitle: '¿Querés profundizar en el trabajo energético?',
+    ctaText:
+      'En Academia Astral encontrás cursos de péndulo hebreo y sanación energética para desarrollar tu práctica con una base sólida.',
+    ctaLabel: 'Ver cursos de sanación',
+    ctaHref: '/categoria/chakras_energia',
   },
 };
 
@@ -73,6 +113,12 @@ export default function BlogPost() {
     ctaLabel: 'Explorar categoría',
     ctaHref: `/categoria/${post.category}`,
   };
+  const ctaHref = post.relatedCourseSlug
+    ? `/curso/${post.relatedCourseSlug}`
+    : currentCategoryContent.ctaHref;
+  const ctaLabel = post.relatedCourseSlug
+    ? 'Ver el curso →'
+    : currentCategoryContent.ctaLabel;
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -84,6 +130,7 @@ export default function BlogPost() {
     inLanguage: 'es',
     mainEntityOfPage: canonicalUrl,
     url: canonicalUrl,
+    image: post.imageUrl || SITE_OG_IMAGE,
     author: {
       '@type': 'Organization',
       name: SITE_NAME,
@@ -91,6 +138,7 @@ export default function BlogPost() {
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
+      logo: { '@type': 'ImageObject', url: SITE_OG_IMAGE },
     },
   };
 
@@ -110,6 +158,8 @@ export default function BlogPost() {
         <meta property="og:description" content={post.description} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={post.imageUrl || SITE_OG_IMAGE} />
+        <meta name="twitter:image" content={post.imageUrl || SITE_OG_IMAGE} />
         <meta property="article:published_time" content={post.date} />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
@@ -166,10 +216,10 @@ export default function BlogPost() {
           </h3>
           <p className="text-gray-400 mb-6">{currentCategoryContent.ctaText}</p>
           <Link
-            to={currentCategoryContent.ctaHref}
+            to={ctaHref}
             className="inline-block bg-[#D4AF37] text-[#0F0A1E] font-semibold px-6 py-3 rounded-lg hover:bg-[#c9a227] transition-colors"
           >
-            {currentCategoryContent.ctaLabel}
+            {ctaLabel}
           </Link>
         </div>
       </article>

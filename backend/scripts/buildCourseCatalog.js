@@ -28,7 +28,10 @@ export function buildCourseCatalog() {
       affiliationStatus: 'pending',
       active:            true,
       scrapedAt:         new Date(),
-      ...(e.highlights    ? { highlights:    e.highlights    } : {}),
-      ...(e.instructorBio ? { instructorBio: e.instructorBio } : {}),
+      ...(e.highlights      ? { highlights:      e.highlights      } : {}),
+      ...(e.instructorBio   ? { instructorBio:   e.instructorBio   } : {}),
+      ...(e.tagline         ? { tagline:         e.tagline         } : {}),
+      ...(e.targetAudience  ? { targetAudience:  e.targetAudience  } : {}),
+      ...(e.includes        ? { includes:        e.includes        } : {}),
     }));
 }

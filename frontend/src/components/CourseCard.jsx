@@ -68,14 +68,10 @@ export default function CourseCard({ course }) {
       </div>
 
       <div className="p-4 flex flex-col flex-1">
-        <div className="flex items-center justify-between gap-3 mb-2">
-          {course.workloadHours > 0 ? (
+        <div className="flex items-center justify-between gap-3 mb-2 min-h-[1.25rem]">
+          {course.workloadHours > 0 && (
             <p className="text-xs text-gray-500">{course.workloadHours} hs</p>
-          ) : (
-            <p className="text-xs text-gray-600">Duración no indicada</p>
           )}
-
-          {!hasPrice && <MetaBadge tone="warn">Sin precio</MetaBadge>}
         </div>
 
         <h3 className="font-display text-[#D4AF37] text-lg leading-snug mb-1 line-clamp-2 min-h-[3.5rem] group-hover:text-[#E6C86A] transition-colors">
@@ -89,20 +85,16 @@ export default function CourseCard({ course }) {
         )}
 
         <div className="flex items-center gap-2 mb-3 flex-wrap min-h-[1.5rem]">
-          {hasRating ? (
+          {hasRating && (
             <>
               <Stars rating={course.rating} />
               <span className="text-gray-500 text-xs">({course.rating.toFixed(1)})</span>
-              {hasReviews ? (
+              {hasReviews && (
                 <span className="text-gray-600 text-xs">
                   {course.reviewsCount} reseñas
                 </span>
-              ) : (
-                <MetaBadge tone="muted">Sin reseñas</MetaBadge>
               )}
             </>
-          ) : (
-            <MetaBadge tone="warn">Sin rating</MetaBadge>
           )}
         </div>
 

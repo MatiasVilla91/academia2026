@@ -7,7 +7,7 @@ import CourseGrid from '../components/CourseGrid';
 import Pagination from '../components/Pagination';
 import Loading from '../components/Loading';
 import EmptyState from '../components/EmptyState';
-import { getCategoryName } from '../lib/categories';
+import { getCategoryName, getCategoryEmoji, getCategoryDescription } from '../lib/categories';
 import { SITE_NAME, SITE_URL } from '../lib/site';
 
 export default function CategoryPage() {
@@ -48,10 +48,16 @@ export default function CategoryPage() {
         <div className="mt-4 flex items-start justify-between gap-6 flex-wrap">
           <div className="max-w-2xl">
             <p className="text-gray-500 text-xs uppercase tracking-[0.18em] mb-3">Categoría</p>
-            <h1 className="font-display text-3xl md:text-5xl text-[#D4AF37]">{categoryName}</h1>
+            <div className="flex items-center gap-3 mb-1">
+              <span className="text-3xl">{getCategoryEmoji(category)}</span>
+              <h1 className="font-display text-3xl md:text-5xl text-[#D4AF37]">{categoryName}</h1>
+            </div>
+            {getCategoryDescription(category) && (
+              <p className="text-gray-400 text-sm mt-2 max-w-lg">{getCategoryDescription(category)}</p>
+            )}
             {!isLoading && (
-              <p className="text-gray-400 text-sm mt-3">
-                {total} {total === 1 ? 'curso disponible' : 'cursos disponibles'} en español dentro de esta línea de estudio.
+              <p className="text-gray-500 text-xs mt-3">
+                {total} {total === 1 ? 'curso disponible' : 'cursos disponibles'}
               </p>
             )}
           </div>
@@ -65,6 +71,7 @@ export default function CategoryPage() {
                   to={`/categoria/${item.category}`}
                   className="inline-flex items-center gap-2 rounded-full border border-[#7C3AED]/20 px-3 py-1.5 text-xs text-gray-300 hover:border-[#7C3AED] hover:text-white transition-colors"
                 >
+                  <span>{getCategoryEmoji(item.category)}</span>
                   <span>{getCategoryName(item.category)}</span>
                   <span className="text-gray-500">{item.count}</span>
                 </Link>
