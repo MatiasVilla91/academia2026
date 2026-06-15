@@ -18,8 +18,8 @@ function buildSeoFiles(mode) {
   const publicDir = path.join(repoRoot, 'public');
   const blogPostsPath = path.join(repoRoot, 'src', 'lib', 'blogPosts.js');
   const blogPostsSource = fs.readFileSync(blogPostsPath, 'utf8');
-  const slugs = extractMatches(blogPostsSource, /slug:\s*'([^']+)'/g);
-  const dates = extractMatches(blogPostsSource, /date:\s*'([^']+)'/g);
+  const slugs = extractMatches(blogPostsSource, /["']?slug["']?\s*:\s*["']([^"']+)["']/g);
+  const dates = extractMatches(blogPostsSource, /["']?date["']?\s*:\s*["']([^"']+)["']/g);
   const latestDate = dates[0] || today;
   const categorySlugs = [
     'tarot',

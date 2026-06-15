@@ -1,5 +1,977 @@
 export const blogPosts = [
   {
+    "slug": "arcanos-menores-del-tarot",
+    "title": "Arcanos Menores del Tarot: Significado de los Cuatro Palos",
+    "description": "Qué son los arcanos menores del tarot, cómo se dividen en cuatro palos, qué representa cada uno y cómo se diferencian de los arcanos mayores en una lectura.",
+    "date": "2026-06-03",
+    "category": "tarot",
+    "readTime": 8,
+    "content": [
+      {
+        "type": "p",
+        "text": "Cuando alguien empieza a estudiar tarot, suele concentrarse en los arcanos mayores y dejar de lado los menores. Sin embargo, los 56 arcanos menores aportan el detalle, el matiz y lo cotidiano de cada lectura. Entender cómo funcionan es lo que permite pasar de una interpretación general a una lectura concreta y útil."
+      },
+      {
+        "type": "h2",
+        "text": "Qué son los arcanos menores"
+      },
+      {
+        "type": "p",
+        "text": "Los arcanos menores son 56 cartas que se dividen en cuatro palos, de manera parecida a una baraja común. Mientras los arcanos mayores hablan de grandes temas y procesos de vida, los menores describen situaciones, emociones y circunstancias del día a día. En una tirada, suelen aterrizar el mensaje de los mayores a lo concreto."
+      },
+      {
+        "type": "h2",
+        "text": "Los cuatro palos y su significado"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Copas: el mundo de las emociones, los vínculos, el amor y la vida afectiva",
+          "Oros (o pentáculos): lo material, el dinero, el trabajo, el cuerpo y lo concreto",
+          "Espadas: la mente, los pensamientos, los conflictos, las decisiones y la comunicación",
+          "Bastos (o varas): la energía, la acción, la creatividad, los proyectos y el impulso"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Números y figuras"
+      },
+      {
+        "type": "p",
+        "text": "Cada palo va del As al Diez y suma cuatro figuras: sota, caballo, reina y rey. Los números marcan etapas o intensidades dentro del tema del palo, y las figuras suelen representar personas, actitudes o energías que intervienen en la situación. Esa estructura ordenada facilita el aprendizaje cuando se la estudia por partes."
+      },
+      {
+        "type": "h2",
+        "text": "Diferencia con los arcanos mayores"
+      },
+      {
+        "type": "p",
+        "text": "Una forma simple de pensarlo: los arcanos mayores marcan el \"qué\" de fondo —las grandes lecciones y los procesos— y los menores describen el \"cómo\" y el \"ahora\" —las circunstancias cotidianas en las que eso se juega. Una lectura completa combina ambos planos para dar una imagen rica y precisa."
+      },
+      {
+        "type": "p",
+        "text": "Aprender a integrar los 78 arcanos lleva práctica, pero es totalmente accesible si se aborda de forma ordenada. Un curso de tarot para principiantes te da las bases para leer mayores y menores en conjunto, con método y sin conocimientos previos."
+      }
+    ],
+    "relatedCourseSlug": "tarot-para-principiantes"
+  },
+  {
+    "slug": "como-limpiar-y-cargar-cartas-de-tarot",
+    "title": "Cómo Limpiar y Cargar tus Cartas de Tarot",
+    "description": "Por qué se limpian las cartas de tarot, cómo hacerlo con métodos simples, cómo cargarlas con tu energía y cada cuánto conviene repetir el proceso.",
+    "date": "2026-06-02",
+    "category": "tarot",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "Muchas personas que trabajan con tarot acostumbran limpiar y cargar sus cartas, sobre todo cuando son nuevas, cuando otras manos las tocaron o después de una lectura intensa. Más allá de la creencia que cada uno tenga, es un ritual sencillo que ayuda a establecer una relación personal con el mazo y a iniciar las lecturas desde un lugar de cuidado y atención."
+      },
+      {
+        "type": "h2",
+        "text": "Por qué se limpian las cartas"
+      },
+      {
+        "type": "p",
+        "text": "La idea detrás de la limpieza es despejar el mazo de energías previas y dejarlo listo para trabajar. Para algunos es algo energético; para otros, un gesto simbólico que marca un inicio. En ambos casos, cumple una función práctica: ayuda a conectar con las cartas y a entrar en el estado de atención que una buena lectura requiere."
+      },
+      {
+        "type": "h2",
+        "text": "Métodos simples de limpieza"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "el golpecito: dar un toque suave sobre el mazo para \"reiniciarlo\" entre lecturas",
+          "el humo: pasar las cartas por el humo de incienso o hierbas, una práctica muy difundida",
+          "reordenar el mazo: volverlo a su orden original para descansarlo",
+          "la luz: dejar las cartas un rato cerca de luz natural, evitando el sol directo fuerte"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Cómo cargar las cartas con tu energía"
+      },
+      {
+        "type": "p",
+        "text": "Cargar el mazo es imprimirle tu intención. Una forma habitual es sostener las cartas entre las manos, tomar unas respiraciones tranquilas y conectar con el propósito con el que querés usarlas. Algunas personas barajan mientras lo hacen, otras simplemente las sostienen un momento con atención. No hay una única manera correcta: lo importante es la presencia con la que lo hacés."
+      },
+      {
+        "type": "h2",
+        "text": "Cada cuánto conviene hacerlo"
+      },
+      {
+        "type": "p",
+        "text": "No hay una regla fija. Muchos lo hacen al estrenar un mazo, cuando alguien más manipuló las cartas, o cuando sienten que una lectura los dejó cargados. Una limpieza breve entre consultas y una más cuidada de vez en cuando suele ser suficiente. Lo esencial es que el ritual tenga sentido para vos, no que cumplas un protocolo rígido."
+      },
+      {
+        "type": "p",
+        "text": "Cuidar el mazo es parte de desarrollar el oficio. Si querés aprender a leer el tarot con método —desde el cuidado de las cartas hasta la interpretación de las tiradas—, un curso para principiantes te acompaña en todo el proceso."
+      }
+    ],
+    "relatedCourseSlug": "tarot-para-principiantes"
+  },
+  {
+    "slug": "simbolos-del-reiki-y-su-significado",
+    "title": "Símbolos del Reiki y su Significado",
+    "description": "Cuáles son los símbolos del reiki, qué función cumple cada uno, en qué nivel se aprenden y por qué tradicionalmente se transmiten dentro de la formación.",
+    "date": "2026-06-01",
+    "category": "reiki",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "Los símbolos son uno de los aspectos más característicos del reiki. Se utilizan como herramientas para enfocar la intención y dirigir la energía hacia objetivos concretos. En la tradición del Reiki Usui, se transmiten dentro de la formación y se aprenden a partir de ciertos niveles, acompañados de su uso y significado."
+      },
+      {
+        "type": "h2",
+        "text": "Qué función cumplen los símbolos"
+      },
+      {
+        "type": "p",
+        "text": "En el reiki, los símbolos no actúan por sí solos como un amuleto: funcionan como un apoyo para la intención de quien practica. Ayudan a orientar la energía hacia un fin específico —potenciar, armonizar, trabajar a distancia o en el plano emocional— y a entrar en un estado de mayor enfoque durante la sesión."
+      },
+      {
+        "type": "h2",
+        "text": "Los símbolos tradicionales del Reiki Usui"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "el símbolo de poder: se asocia con aumentar y concentrar la energía en un punto",
+          "el símbolo de armonía: vinculado al equilibrio emocional y mental",
+          "el símbolo de la distancia: usado para enviar reiki más allá del aquí y ahora",
+          "el símbolo del maestro: reservado a los niveles más avanzados de la formación"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "En qué nivel se aprenden"
+      },
+      {
+        "type": "p",
+        "text": "Por lo general, los primeros símbolos se introducen en el segundo nivel del Reiki Usui, mientras que el símbolo del maestro se transmite en la formación de maestría. En el primer nivel, el trabajo suele centrarse en la práctica sobre uno mismo y en la apertura del canal, sin símbolos todavía."
+      },
+      {
+        "type": "h2",
+        "text": "Por qué se transmiten dentro de la formación"
+      },
+      {
+        "type": "p",
+        "text": "En la tradición, los símbolos se enseñan de maestro a alumno durante el proceso de iniciación, junto con su pronunciación, su trazado y su uso. Más que memorizar dibujos, lo importante es comprender cómo se integran en la práctica y recibir el acompañamiento para usarlos con criterio."
+      },
+      {
+        "type": "p",
+        "text": "Si te interesa aprender reiki de forma estructurada, incluyendo el trabajo con los símbolos en los niveles correspondientes, una formación guiada te da el marco y el acompañamiento para hacerlo paso a paso."
+      }
+    ],
+    "relatedCourseSlug": "reiki-usui-nivel-1"
+  },
+  {
+    "slug": "reiki-a-distancia-como-funciona",
+    "title": "Reiki a Distancia: Cómo Funciona y Qué Esperar",
+    "description": "Qué es el reiki a distancia, en qué se basa la idea de enviar energía a otro lugar, cómo se realiza una sesión y qué conviene tener en cuenta con expectativas realistas.",
+    "date": "2026-05-31",
+    "category": "reiki",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "El reiki a distancia es una de las prácticas que más curiosidad despierta: la idea de enviar energía a una persona que no está físicamente presente. Forma parte de la tradición del reiki desde sus niveles intermedios y, para quienes lo practican, es una extensión natural del trabajo presencial."
+      },
+      {
+        "type": "h2",
+        "text": "En qué se basa"
+      },
+      {
+        "type": "p",
+        "text": "El reiki a distancia parte de la idea de que la energía no está limitada por el espacio. A través de la intención y de un símbolo específico que se aprende en el segundo nivel, el practicante establece una conexión para enviar reiki a otro lugar o, según algunas prácticas, a otro momento. Es un concepto que pertenece al marco propio de la disciplina."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo se realiza una sesión"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "El practicante se ubica en un espacio tranquilo y entra en un estado de calma y concentración.",
+          "Establece la conexión con la persona que recibirá el reiki, con su consentimiento previo.",
+          "Utiliza el símbolo de la distancia y su intención para enviar la energía.",
+          "Recorre, de forma simbólica, las zonas que trabajaría en una sesión presencial.",
+          "Cierra la sesión y, habitualmente, comparte con la persona cómo fue la experiencia."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Qué esperar de la práctica"
+      },
+      {
+        "type": "p",
+        "text": "Como en el reiki presencial, la experiencia varía: algunas personas reportan relajación o sensaciones sutiles, y otras una vivencia más leve. Conviene acercarse con expectativas realistas y entender el reiki, presencial o a distancia, como un complemento de bienestar y no como un sustituto de la atención médica cuando hace falta."
+      },
+      {
+        "type": "h2",
+        "text": "Hace falta formación"
+      },
+      {
+        "type": "p",
+        "text": "El reiki a distancia no se improvisa: requiere haber recibido la formación correspondiente, donde se transmiten el símbolo y el método para trabajar de esta manera. Si querés aprender reiki desde las bases y avanzar hacia estas prácticas, una formación guiada te acompaña en cada nivel."
+      }
+    ],
+    "relatedCourseSlug": "reiki-usui-nivel-1"
+  },
+  {
+    "slug": "222-significado",
+    "title": "222 Significado: Qué Quiere Decir Ver este Número Repetido",
+    "description": "Qué significa ver el 222, cómo se interpreta esta secuencia en la numerología y los números de ángeles, y qué mensaje suele asociarse al equilibrio y la armonía.",
+    "date": "2026-06-07",
+    "category": "numerologia_astrologia",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "Si el número 222 empezó a aparecer seguido en tu día —en el reloj, en una dirección, en un ticket—, es natural preguntarse qué significa. Dentro de la numerología y la tradición de los números de ángeles, las secuencias repetidas se leen como señales, y el 222 tiene un mensaje bastante consistente entre las distintas interpretaciones."
+      },
+      {
+        "type": "h2",
+        "text": "Qué significa el 222"
+      },
+      {
+        "type": "p",
+        "text": "El 222 se asocia con el equilibrio, la armonía y la confianza en los procesos. El número 2 habla de cooperación, vínculos, paciencia y dualidad; repetido tres veces, refuerza la idea de que algo en tu vida está buscando balance. Suele interpretarse como un recordatorio de mantener la calma, no forzar los resultados y confiar en que las cosas se están acomodando, incluso si todavía no lo ves."
+      },
+      {
+        "type": "h2",
+        "text": "El 222 en distintos ámbitos"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "en las relaciones: invita a la armonía, el diálogo y la paciencia con el otro",
+          "en el trabajo: sugiere cooperación y confianza en que el esfuerzo dará fruto a su tiempo",
+          "en lo personal: recuerda buscar equilibrio entre las distintas áreas de tu vida"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Qué hacer cuando ves el 222"
+      },
+      {
+        "type": "p",
+        "text": "Más que una predicción, conviene tomarlo como una pausa de conciencia. Cuando lo notes, preguntate dónde te falta equilibrio o paciencia en este momento. El 222 no anuncia un hecho concreto: señala una actitud —la de sostener la calma y confiar— que puede ayudarte en lo que estés atravesando."
+      },
+      {
+        "type": "h2",
+        "text": "Parte de un sistema más amplio"
+      },
+      {
+        "type": "p",
+        "text": "El 222 es una de muchas secuencias. Si te llama la atención cómo los números parecen acompañar momentos de tu vida, la numerología ofrece un sistema completo para interpretarlos a partir de tu fecha de nacimiento, tu nombre y tus ciclos personales."
+      }
+    ],
+    "relatedCourseSlug": "numerologia-energetica"
+  },
+  {
+    "slug": "333-significado",
+    "title": "333 Significado: El Mensaje detrás de esta Secuencia",
+    "description": "Qué significa ver el 333, cómo se interpreta en los números de ángeles y la numerología, y por qué se asocia con la creatividad, la expresión y el apoyo.",
+    "date": "2026-06-06",
+    "category": "numerologia_astrologia",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "El 333 es una de las secuencias que más llama la atención cuando empieza a repetirse. Como otros números de ángeles, se interpreta como una señal simbólica, y su mensaje se vincula con la creatividad, la expresión personal y la sensación de estar acompañado en lo que estás haciendo."
+      },
+      {
+        "type": "h2",
+        "text": "Qué significa el 333"
+      },
+      {
+        "type": "p",
+        "text": "El número 3 se asocia con la creatividad, la comunicación, la expansión y el optimismo. Repetido en el 333, esa energía se intensifica. Suele leerse como un impulso a expresar quién sos, a animarte a crear y a confiar en tus capacidades. También se interpreta como un recordatorio de que no estás solo en el proceso, de que contás con apoyo para avanzar."
+      },
+      {
+        "type": "h2",
+        "text": "Cuándo suele aparecer"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "en momentos de decisión creativa o de querer mostrar tu trabajo",
+          "cuando dudás de tus capacidades y necesitás un recordatorio de confianza",
+          "en etapas de crecimiento personal o de querer comunicar algo importante"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Mente, cuerpo y espíritu"
+      },
+      {
+        "type": "p",
+        "text": "Algunas interpretaciones vinculan el 333 con la idea de equilibrio entre tres planos: la mente, el cuerpo y el espíritu. Desde esa mirada, ver el número sería una invitación a revisar si esas tres dimensiones están en armonía o si alguna está quedando relegada en tu día a día."
+      },
+      {
+        "type": "h2",
+        "text": "Qué hacer cuando lo ves"
+      },
+      {
+        "type": "p",
+        "text": "Tomá el 333 como un estímulo para expresarte y crear sin tanto miedo al juicio. Cuando lo notes, registrá qué proyecto o idea venís postergando. La lectura más útil de estos números no es esperar que algo pase, sino usarlos como recordatorios para alinear tu actitud con lo que querés desarrollar."
+      },
+      {
+        "type": "p",
+        "text": "Si te interesa entender la lógica de los números más allá de las secuencias sueltas, la numerología te permite leer su significado en tu propia carta y en tus ciclos."
+      }
+    ],
+    "relatedCourseSlug": "numerologia-energetica"
+  },
+  {
+    "slug": "como-calcular-carta-natal",
+    "title": "Cómo Calcular tu Carta Natal: Guía para Principiantes",
+    "description": "Qué es la carta natal, qué datos necesitás para calcularla, cómo obtenerla paso a paso y qué elementos básicos mirar para empezar a interpretarla.",
+    "date": "2026-06-05",
+    "category": "numerologia_astrologia",
+    "readTime": 8,
+    "content": [
+      {
+        "type": "p",
+        "text": "La carta natal es uno de los puntos de partida más fascinantes de la astrología. Es una especie de mapa del cielo en el momento exacto de tu nacimiento, y se usa para describir rasgos de personalidad, potenciales y desafíos. Calcularla hoy es más simple de lo que parece: lo difícil, y lo interesante, viene después, al interpretarla."
+      },
+      {
+        "type": "h2",
+        "text": "Qué es la carta natal"
+      },
+      {
+        "type": "p",
+        "text": "La carta natal, o carta astral, es una representación de las posiciones del Sol, la Luna y los planetas en relación con la Tierra en el instante en que naciste, vistas desde tu lugar de nacimiento. Esa foto del cielo se organiza en signos y casas, y cada elemento aporta una capa de información sobre distintos aspectos de la vida."
+      },
+      {
+        "type": "h2",
+        "text": "Qué datos necesitás"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Fecha de nacimiento completa (día, mes y año).",
+          "Hora de nacimiento lo más exacta posible: define el ascendente y la posición de las casas.",
+          "Lugar de nacimiento (ciudad y país)."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "La hora es el dato más sensible. Una diferencia de minutos puede cambiar el ascendente, así que conviene buscarla en la partida de nacimiento si no la recordás con precisión."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo calcularla paso a paso"
+      },
+      {
+        "type": "p",
+        "text": "No hace falta hacer cálculos manuales: existen calculadoras de carta natal gratuitas que, con esos tres datos, generan el gráfico al instante. El proceso es simple: ingresás fecha, hora y lugar, y obtenés la rueda con los signos, los planetas y las casas. Lo valioso no es generar el gráfico, sino aprender a leerlo."
+      },
+      {
+        "type": "h2",
+        "text": "Qué mirar primero"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "el Sol: tu signo solar, vinculado a la identidad y el propósito",
+          "la Luna: tu mundo emocional y tus necesidades internas",
+          "el ascendente: la forma en que te mostrás y encarás la vida",
+          "las casas: las áreas de la vida (pareja, trabajo, hogar) donde se expresa cada energía"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Esos tres puntos —Sol, Luna y ascendente— ya dan un retrato mucho más rico que el signo solar solo, y son un buen punto de partida para quien recién empieza."
+      },
+      {
+        "type": "h2",
+        "text": "El siguiente paso: interpretar"
+      },
+      {
+        "type": "p",
+        "text": "Tener la carta es el comienzo; interpretarla es el aprendizaje real. Entender cómo se combinan signos, planetas y casas requiere estudio y práctica, pero es accesible si lo abordás de forma ordenada. Un curso que integre numerología y astrología puede darte el marco para leer tu carta y la de otros con criterio."
+      }
+    ],
+    "relatedCourseSlug": "numerologia-energetica"
+  },
+  {
+    "slug": "metodo-369-para-manifestar",
+    "title": "Método 369 para Manifestar: Cómo Funciona y Cómo Usarlo",
+    "description": "Qué es el método 369 de manifestación, cómo se hace paso a paso, de dónde viene la idea de los números 3, 6 y 9 y qué hace falta para que la práctica tenga sentido.",
+    "date": "2026-06-04",
+    "category": "abundancia",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "El método 369 se volvió popular como una técnica simple para trabajar la manifestación a través de la escritura. La propuesta es concreta: escribir una intención tres veces a la mañana, seis al mediodía y nueve a la noche. Más allá de la creencia de cada uno, tiene una lógica interesante: usar la repetición para enfocar la atención y la emoción en lo que querés crear."
+      },
+      {
+        "type": "h2",
+        "text": "De dónde viene el 3, 6 y 9"
+      },
+      {
+        "type": "p",
+        "text": "La elección de esos números suele asociarse popularmente a Nikola Tesla, a quien se atribuye una fascinación por el 3, el 6 y el 9. En el contexto de la manifestación, no importa tanto el origen como la estructura: tres momentos del día y una cantidad creciente de repeticiones que obligan a volver, una y otra vez, a la misma intención."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo hacer el método 369 paso a paso"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Definí una intención clara y en presente, como si ya estuviera ocurriendo.",
+          "A la mañana, al despertar, escribila tres veces con atención.",
+          "Al mediodía, escribila seis veces.",
+          "A la noche, antes de dormir, escribila nueve veces.",
+          "Repetí el proceso durante varios días seguidos, sosteniendo la constancia."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Por qué la gente lo usa"
+      },
+      {
+        "type": "p",
+        "text": "La fuerza del método no está en los números en sí, sino en lo que generan: claridad y foco. Escribir la misma intención varias veces al día te obliga a definir con precisión qué querés, a conectarlo con una emoción y a mantenerlo presente en tu mente. Esa atención sostenida influye en cómo te predisponés y en las decisiones que tomás."
+      },
+      {
+        "type": "h2",
+        "text": "Claves para que tenga sentido"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "redactá la intención en presente, concreta y creíble para vos",
+          "conectá con la emoción de eso que querés, no lo escribas en automático",
+          "acompañá la práctica con acción concreta en esa dirección",
+          "sostené la constancia: la repetición es parte del método"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Manifestar con los pies en la tierra"
+      },
+      {
+        "type": "p",
+        "text": "El método 369 funciona mejor entendido como una herramienta de enfoque y no como un atajo mágico. Aclarar lo que querés, sostenerlo en la atención y moverte hacia eso es lo que produce resultados. Si querés profundizar en cómo manifestar con intención, claridad y acción concreta, hay material formativo dedicado específicamente a ese proceso."
+      }
+    ],
+    "relatedCourseSlug": "manual-de-manifestacion-2-0"
+  },
+  {
+    "slug": "energia-femenina-como-conectar",
+    "title": "Energía Femenina: Qué Es y Cómo Conectar con tu Poder Interior",
+    "description": "Qué es la energía femenina, en qué se diferencia de la masculina, cómo se manifiesta en la vida cotidiana y prácticas simples para reconectar con tu poder interior.",
+    "date": "2026-06-15",
+    "category": "magia_plantas",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "La energía femenina no es algo exclusivo de las mujeres ni se opone a la fuerza: es una cualidad presente en todas las personas que tiene que ver con la receptividad, la intuición, la conexión y la capacidad de crear. Conectar con ella suele traducirse en una vida más fluida, vínculos más auténticos y una relación más amable con uno mismo."
+      },
+      {
+        "type": "h2",
+        "text": "Qué es la energía femenina"
+      },
+      {
+        "type": "p",
+        "text": "En muchas tradiciones, la energía femenina se asocia con lo receptivo, lo intuitivo, lo cíclico y lo emocional, mientras que la masculina se vincula con lo activo, lo racional y lo dirigido a objetivos. No son categorías rígidas ni mejores o peores: son polaridades complementarias que conviven en cada persona. El desequilibrio aparece cuando vivimos demasiado tiempo desde un solo polo."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo se manifiesta en lo cotidiano"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "la capacidad de escuchar a la intuición y confiar en lo que se siente",
+          "la apertura a recibir, no solo a dar o producir constantemente",
+          "la conexión con el cuerpo, los ciclos y las emociones",
+          "la creatividad y la expresión auténtica",
+          "la presencia y la calidad en los vínculos, por encima de la cantidad"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Por qué muchas personas se desconectan de ella"
+      },
+      {
+        "type": "p",
+        "text": "Vivimos en una cultura que premia la productividad, el control y el hacer permanente —cualidades de la polaridad masculina. En ese ritmo, la receptividad y la pausa quedan relegadas, y muchas mujeres terminan operando casi todo el tiempo desde la energía masculina, agotadas y desconectadas de su intuición y su placer."
+      },
+      {
+        "type": "h2",
+        "text": "Prácticas para reconectar"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Date permiso para recibir: aceptá ayuda, descanso y disfrute sin culpa.",
+          "Reconectá con el cuerpo a través del movimiento libre, la danza o el simple registro de sensaciones.",
+          "Hacé espacio para la intuición: momentos de silencio donde escuchar lo que sentís, no solo lo que pensás.",
+          "Respetá tus ciclos de energía en lugar de exigirte el mismo rendimiento todos los días.",
+          "Cultivá la creatividad sin objetivo productivo, solo por el gusto de crear."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Energía femenina y poder personal"
+      },
+      {
+        "type": "p",
+        "text": "Conectar con la energía femenina no es volverse pasiva: es recuperar una fuente de poder distinta, basada en la autenticidad, la intuición y el magnetismo natural. Una mujer conectada con su energía femenina no necesita imponerse; su presencia comunica seguridad y atracción desde un lugar genuino."
+      },
+      {
+        "type": "p",
+        "text": "Si querés profundizar en cómo desarrollar ese poder femenino con técnicas concretas de presencia, inteligencia emocional y atracción, hay material formativo dedicado especialmente a ese camino."
+      }
+    ],
+    "relatedCourseSlug": "emperatriz-magnetica-version-premium"
+  },
+  {
+    "slug": "inteligencia-emocional-femenina",
+    "title": "Inteligencia Emocional Femenina: La Base del Carisma Auténtico",
+    "description": "Qué es la inteligencia emocional aplicada al poder femenino, por qué es la base del carisma genuino y cómo desarrollarla para mejorar tus vínculos y tu presencia.",
+    "date": "2026-06-13",
+    "category": "magia_plantas",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "El carisma que perdura no se construye con técnicas de manipulación ni con una imagen perfecta, sino sobre una base más profunda: la inteligencia emocional. La capacidad de reconocer, comprender y gestionar las propias emociones —y de leer las de los demás— es lo que vuelve a una persona magnética, segura y agradable de tratar."
+      },
+      {
+        "type": "h2",
+        "text": "Qué es la inteligencia emocional"
+      },
+      {
+        "type": "p",
+        "text": "La inteligencia emocional es la habilidad de identificar lo que sentís, entender de dónde viene y elegir cómo responder en lugar de reaccionar en automático. Incluye también la empatía: la capacidad de percibir el estado emocional de los demás y vincularte desde ahí. No es reprimir las emociones, sino relacionarte con ellas de manera consciente."
+      },
+      {
+        "type": "h2",
+        "text": "Por qué es la base del carisma"
+      },
+      {
+        "type": "p",
+        "text": "Las personas que nos resultan magnéticas suelen tener algo en común: nos hacen sentir vistos y cómodos. Eso no surge de la apariencia, sino de la presencia emocional. Quien gestiona bien sus emociones transmite calma y seguridad; quien sabe escuchar de verdad genera conexión. El carisma auténtico es, en gran parte, inteligencia emocional en acción."
+      },
+      {
+        "type": "h2",
+        "text": "Pilares para desarrollarla"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "autoconciencia: registrar qué sentís y nombrarlo, sin juzgarte",
+          "autorregulación: aprender a hacer una pausa antes de reaccionar",
+          "empatía: escuchar para comprender, no para responder",
+          "habilidades sociales: comunicar lo que necesitás con claridad y respeto",
+          "automotivación: sostener tus objetivos desde el deseo, no desde la exigencia"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Inteligencia emocional y poder femenino"
+      },
+      {
+        "type": "p",
+        "text": "En el desarrollo del poder femenino, la inteligencia emocional ocupa un lugar central. La seguridad que atrae no es dureza ni frialdad: es la serenidad de quien conoce sus emociones y no se deja arrastrar por ellas. Esa autorregulación, combinada con empatía y autenticidad, es lo que construye una presencia verdaderamente magnética."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo empezar a practicarla"
+      },
+      {
+        "type": "p",
+        "text": "Se entrena con pequeños gestos cotidianos: hacer una pausa antes de responder cuando algo te moviliza, ponerle nombre a lo que sentís a lo largo del día, escuchar a alguien sin interrumpir ni preparar tu respuesta mientras habla. Con el tiempo, esos hábitos transforman la forma en que te relacionás contigo y con los demás."
+      },
+      {
+        "type": "p",
+        "text": "Para quienes quieran trabajar la inteligencia emocional femenina de forma estructurada, junto con técnicas de presencia y atracción, existe material formativo enfocado en ese desarrollo integral."
+      }
+    ],
+    "relatedCourseSlug": "emperatriz-magnetica-version-premium"
+  },
+  {
+    "slug": "1111-significado",
+    "title": "1111 Significado: Qué Quiere Decir Ver esta Secuencia de Números",
+    "description": "Qué significa ver el 1111, por qué aparecen las secuencias repetidas o números de ángeles, cómo interpretarlas desde la numerología y qué hacer cuando las notás.",
+    "date": "2026-06-11",
+    "category": "numerologia_astrologia",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "A mucha gente le pasa: mira el reloj y son las 11:11, ve el mismo número en una factura, en una patente, en un mensaje. Cuando una secuencia como el 1111 empieza a aparecer una y otra vez, es difícil no preguntarse si significa algo. En la numerología y en la tradición de los llamados números de ángeles, estas repeticiones se interpretan como señales que vale la pena atender."
+      },
+      {
+        "type": "h2",
+        "text": "Qué son los números de ángeles"
+      },
+      {
+        "type": "p",
+        "text": "Los números de ángeles son secuencias repetidas —1111, 222, 333, entre otras— a las que distintas tradiciones espirituales atribuyen un significado simbólico. La idea es que, cuando un número se repite con insistencia, funciona como un mensaje o un recordatorio. Más allá de la creencia, muchas personas los viven como invitaciones a prestar atención a un momento de su vida."
+      },
+      {
+        "type": "h2",
+        "text": "Qué significa el 1111"
+      },
+      {
+        "type": "p",
+        "text": "El 1111 suele interpretarse como un número de inicios, de despertar y de alineación. El número 1 se asocia con el comienzo, la individualidad y la manifestación; repetido cuatro veces, esa energía se amplifica. Verlo se lee, en general, como una señal de que estás en un punto de apertura: un buen momento para enfocar tus pensamientos en lo que querés crear, porque lo que pongas en marcha ahora tiene fuerza."
+      },
+      {
+        "type": "h2",
+        "text": "Otras secuencias frecuentes"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "111: una idea o intención tomando forma, momento de claridad",
+          "222: equilibrio, armonía y confianza en los procesos",
+          "333: apoyo, creatividad y expresión",
+          "444: estabilidad, protección y trabajo con bases firmes",
+          "555: cambio y transformación en camino"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Qué hacer cuando ves el 1111"
+      },
+      {
+        "type": "p",
+        "text": "La interpretación más útil no es supersticiosa sino reflexiva: cuando notes la secuencia, pará un instante y registrá qué estabas pensando o sintiendo. Tomalo como un recordatorio para volver a tus intenciones y revisar si tus pensamientos y acciones van en la dirección que querés. En ese sentido, los números repetidos funcionan como pequeñas pausas de conciencia en medio del día."
+      },
+      {
+        "type": "p",
+        "text": "Si te interesa entender la lógica detrás de los números y cómo leer su significado en tu propia vida —tu fecha de nacimiento, tu nombre, tus ciclos—, la numerología ofrece un sistema completo para hacerlo."
+      }
+    ],
+    "relatedCourseSlug": "numerologia-energetica"
+  },
+  {
+    "slug": "tirada-de-tarot-del-amor",
+    "title": "Tirada de Tarot del Amor: Cómo Hacerla e Interpretarla",
+    "description": "Cómo hacer una tirada de tarot del amor paso a paso, una tirada simple de tres cartas para relaciones y claves para interpretarla sin caer en el determinismo.",
+    "date": "2026-06-09",
+    "category": "tarot",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "Las preguntas sobre el amor son, probablemente, las más frecuentes cuando alguien se acerca al tarot. Una tirada de tarot del amor no predice un futuro fijo, pero sí puede ayudarte a ver con más claridad lo que está pasando en un vínculo, qué energías intervienen y qué actitud podés tomar. Bien usada, es una herramienta de reflexión más que de adivinación."
+      },
+      {
+        "type": "h2",
+        "text": "Antes de empezar: la actitud importa"
+      },
+      {
+        "type": "p",
+        "text": "Conviene acercarse a la tirada con una pregunta clara y abierta. En lugar de \"¿me va a llamar?\", que busca un sí o un no, sirve más \"¿qué necesito entender sobre este vínculo?\" o \"¿qué actitud me ayudaría en esta relación?\". El tarot trabaja mejor cuando lo usás para comprender, no para obtener una sentencia."
+      },
+      {
+        "type": "h2",
+        "text": "Una tirada simple de tres cartas"
+      },
+      {
+        "type": "p",
+        "text": "Para el amor, una tirada accesible y muy útil es la de tres cartas. Barajá pensando en tu pregunta, cortá el mazo y sacá tres cartas. Cada posición representa un aspecto del vínculo:"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Primera carta: cómo estás vos en esta relación o situación.",
+          "Segunda carta: cómo está la otra persona o la energía del vínculo.",
+          "Tercera carta: el consejo o el camino a tener en cuenta."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Cómo interpretar las cartas"
+      },
+      {
+        "type": "p",
+        "text": "No se trata de leer cada carta de forma aislada, sino de ver cómo dialogan entre sí. Observá los arcanos que salieron, su simbolismo y la historia que cuentan en conjunto. Una carta que en otra tirada podría preocuparte, en el contexto del amor puede hablar de transformación o de cierre necesario. El contexto y la intuición son tan importantes como el significado tradicional."
+      },
+      {
+        "type": "h2",
+        "text": "Qué evitar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "tomar la tirada como un destino inevitable en lugar de una foto del momento",
+          "repetir la misma pregunta una y otra vez buscando la respuesta que querés",
+          "leer solo en clave de \"me quiere / no me quiere\" y perder los matices",
+          "sacar conclusiones definitivas sobre otra persona a partir de las cartas"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Interpretar bien una tirada del amor requiere conocer el significado de los arcanos y practicar la lectura en conjunto. Si querés aprender a leer el tarot desde cero, con método y sin conocimientos previos, un curso para principiantes te da las bases para hacerlo con confianza."
+      }
+    ],
+    "relatedCourseSlug": "tarot-para-principiantes"
+  },
+  {
+    "slug": "como-meditar-para-principiantes",
+    "title": "Cómo Meditar para Principiantes: Guía Paso a Paso",
+    "description": "Aprendé cómo meditar desde cero: qué es realmente meditar, qué necesitás para empezar, una práctica paso a paso y cómo sostener el hábito sin frustrarte.",
+    "date": "2026-06-08",
+    "category": "meditacion",
+    "readTime": 8,
+    "content": [
+      {
+        "type": "p",
+        "text": "Meditar parece complicado cuando se mira desde afuera, pero en el fondo es una práctica simple: dedicar unos minutos a sostener la atención de manera intencional. No hace falta vaciar la mente ni dejar de pensar. De hecho, esa idea es uno de los malentendidos más comunes y la razón por la que mucha gente abandona antes de empezar."
+      },
+      {
+        "type": "p",
+        "text": "Si estás buscando cómo meditar para principiantes, lo más útil es soltar la imagen de la persona perfectamente serena sentada durante una hora. La meditación real es más modesta y más accesible: se trata de practicar volver la atención una y otra vez, con paciencia."
+      },
+      {
+        "type": "h2",
+        "text": "Qué es meditar (y qué no es)"
+      },
+      {
+        "type": "p",
+        "text": "Meditar es entrenar la atención y la conciencia. Elegís un punto de apoyo —la respiración, los sonidos, las sensaciones del cuerpo— y observás lo que pasa sin engancharte con cada pensamiento. No es poner la mente en blanco, ni alcanzar un estado especial, ni sentir paz garantizada. Es notar cuando te distraés y volver, sin pelearte con eso."
+      },
+      {
+        "type": "h2",
+        "text": "Qué necesitás para empezar"
+      },
+      {
+        "type": "p",
+        "text": "Menos de lo que pensás. Un lugar relativamente tranquilo, unos minutos sin interrupciones y una postura cómoda en la que puedas estar quieto sin tensión. No necesitás cojines especiales, apps pagas ni una hora libre. Podés empezar con cinco minutos."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo meditar paso a paso"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Sentate cómodo, con la espalda erguida pero relajada, los hombros sueltos.",
+          "Cerrá los ojos o bajá la mirada hacia un punto fijo en el piso.",
+          "Llevá la atención a la respiración: notá el aire que entra y sale, sin forzarla.",
+          "Cuando aparezca un pensamiento (va a aparecer), reconocelo y volvé suavemente a la respiración.",
+          "Repetí ese gesto de volver tantas veces como haga falta. Esa es la práctica.",
+          "Al terminar, abrí los ojos despacio y registrá cómo te sentís antes de seguir con tu día."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Errores comunes al empezar"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "creer que distraerse es fracasar: distraerse y volver es exactamente lo que se entrena",
+          "esperar resultados inmediatos o experiencias intensas en cada sesión",
+          "practicar sesiones largas de golpe en lugar de sesiones cortas y frecuentes",
+          "abandonar después de unos días porque no se siente nada espectacular"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Cuánto tiempo meditar al principio"
+      },
+      {
+        "type": "p",
+        "text": "Para empezar, cinco a diez minutos diarios son más que suficientes. Importa más la regularidad que la duración: meditar poco todos los días construye el hábito mucho mejor que una sesión larga de vez en cuando. Con el tiempo, si querés, podés ir extendiendo los minutos de forma natural."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo sostener el hábito"
+      },
+      {
+        "type": "p",
+        "text": "El secreto no es la fuerza de voluntad, sino la constancia amable. Atá la práctica a algo que ya hacés —al despertar, antes de dormir, después del café— y empezá con metas pequeñas. Si un día no meditás, no lo conviertas en un fracaso: simplemente retomá al día siguiente. La meditación es una práctica de toda la vida, no una prueba que se aprueba o se reprueba."
+      },
+      {
+        "type": "p",
+        "text": "Si querés una guía estructurada para sostener el proceso y reprogramar hábitos mentales durante varias semanas, un programa acompañado puede darte el marco y la constancia que cuesta lograr en soledad."
+      }
+    ],
+    "relatedCourseSlug": "reset-mental-40-dias-de-transformacion-y-reprogramacion"
+  },
+  {
+    "slug": "meditacion-para-la-ansiedad",
+    "title": "Meditación para la Ansiedad: Técnicas Simples que Ayudan",
+    "description": "Cómo la meditación puede ayudar con la ansiedad, qué técnicas son más accesibles para momentos de tensión y qué conviene tener en cuenta para practicar con realismo.",
+    "date": "2026-06-10",
+    "category": "meditacion",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "La ansiedad suele llegar con la mente acelerada, el cuerpo tenso y la atención atrapada en el futuro: lo que podría pasar, lo que falta resolver, lo que se escapa de control. La meditación no hace desaparecer la ansiedad por arte de magia, pero ofrece una herramienta concreta para cambiar la relación con ella y bajar la intensidad en el momento."
+      },
+      {
+        "type": "h2",
+        "text": "Por qué la meditación ayuda con la ansiedad"
+      },
+      {
+        "type": "p",
+        "text": "Cuando estamos ansiosos, la atención se va al pensamiento anticipatorio y eso retroalimenta la activación del cuerpo. Meditar entrena la capacidad de volver al presente —a la respiración, a las sensaciones— y de observar los pensamientos sin obedecerlos automáticamente. Con la práctica, esa pausa entre el estímulo y la reacción se vuelve más accesible."
+      },
+      {
+        "type": "h2",
+        "text": "Técnicas simples para momentos de tensión"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Respiración prolongada: inhalá contando hasta cuatro y exhalá contando hasta seis. Alargar la exhalación ayuda a calmar el sistema nervioso.",
+          "Anclaje en los cinco sentidos: nombrá algo que ves, algo que escuchás, algo que tocás. Eso devuelve la atención al presente.",
+          "Escaneo corporal breve: recorré el cuerpo de la cabeza a los pies notando dónde hay tensión, sin intentar cambiarla, solo observándola.",
+          "Etiquetar el pensamiento: cuando aparezca una preocupación, nombrala en silencio (\"planificando\", \"preocupándome\") y volvé a la respiración."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Qué conviene tener en cuenta"
+      },
+      {
+        "type": "p",
+        "text": "Es importante practicar con expectativas realistas. En un pico de ansiedad alto, sentarse a meditar puede ser difícil; en esos casos, las técnicas breves de respiración funcionan mejor que una sesión formal. La meditación rinde más como práctica preventiva y sostenida en el tiempo: meditar en los días tranquilos fortalece el recurso para los días difíciles."
+      },
+      {
+        "type": "h2",
+        "text": "Cuándo buscar más apoyo"
+      },
+      {
+        "type": "p",
+        "text": "La meditación es un complemento valioso, no un reemplazo del acompañamiento profesional cuando la ansiedad es intensa o sostenida. Si interfiere de manera significativa con tu vida cotidiana, conviene consultar con un profesional de la salud mental. Meditar puede sumar mucho dentro de un abordaje más amplio."
+      },
+      {
+        "type": "p",
+        "text": "Si querés incorporar la meditación como una práctica diaria y trabajar de fondo los patrones mentales que alimentan la ansiedad, un programa guiado de varias semanas puede ayudarte a sostener el hábito con acompañamiento."
+      }
+    ],
+    "relatedCourseSlug": "reset-mental-40-dias-de-transformacion-y-reprogramacion"
+  },
+  {
+    "slug": "cuanto-tiempo-meditar-al-dia",
+    "title": "Cuánto Tiempo Hay Que Meditar al Día para Notar Resultados",
+    "description": "Cuántos minutos conviene meditar por día según tu experiencia, por qué la frecuencia importa más que la duración y cómo ir aumentando el tiempo sin frustrarte.",
+    "date": "2026-06-12",
+    "category": "meditacion",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "Una de las primeras dudas de quien empieza a meditar es cuánto tiempo hay que dedicarle. La respuesta corta y honesta es: menos de lo que la mayoría imagina. No hace falta meditar una hora para que la práctica tenga efecto. Lo que más cuenta no es la duración de cada sesión, sino la regularidad."
+      },
+      {
+        "type": "h2",
+        "text": "Cuántos minutos según tu experiencia"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "si recién empezás: cinco a diez minutos diarios son ideales para construir el hábito sin abrumarte",
+          "si ya practicás hace un tiempo: quince a veinte minutos permiten profundizar",
+          "practicantes avanzados: pueden extender la práctica, pero rara vez es necesario para la mayoría de las personas"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Por qué la frecuencia importa más que la duración"
+      },
+      {
+        "type": "p",
+        "text": "Meditar diez minutos todos los días construye más que una sesión de una hora una vez por semana. La meditación entrena la atención, y como cualquier entrenamiento, responde a la repetición sostenida. Sesiones cortas y frecuentes mantienen el recurso disponible y refuerzan el hábito de volver a la práctica."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo aumentar el tiempo sin frustrarte"
+      },
+      {
+        "type": "p",
+        "text": "No conviene saltar de cinco minutos a treinta de un día para el otro. Es preferible sumar de a poco: cuando los cinco minutos se vuelven cómodos, pasá a diez; cuando diez se sienten naturales, probá quince. Si una sesión más larga genera resistencia, volvé a un tiempo más corto. La meta es sostener la práctica, no cumplir un número."
+      },
+      {
+        "type": "h2",
+        "text": "Calidad por encima de cantidad"
+      },
+      {
+        "type": "p",
+        "text": "Cinco minutos presentes valen más que veinte minutos dispersos mirando el reloj. Mejor una práctica breve y atenta que una larga hecha por obligación. Si pensás la meditación como parte de tu rutina y no como una tarea más, el tiempo deja de ser el problema."
+      },
+      {
+        "type": "p",
+        "text": "Para quienes buscan instalar la meditación como hábito firme, seguir un programa con estructura diaria durante varias semanas suele ser la forma más efectiva de pasar de la intención a la constancia."
+      }
+    ],
+    "relatedCourseSlug": "reset-mental-40-dias-de-transformacion-y-reprogramacion"
+  },
+  {
+    "slug": "magnetismo-personal-poder-de-atraccion",
+    "title": "Magnetismo Personal: Qué Es y Cómo Desarrollar tu Poder de Atracción",
+    "description": "Qué es el magnetismo personal, de qué depende realmente esa cualidad que llamamos carisma y qué hábitos ayudan a desarrollar una presencia más magnética y segura.",
+    "date": "2026-06-14",
+    "category": "magia_plantas",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "Hay personas que entran a un lugar y, sin decir una palabra, atraen la atención. No siempre son las más llamativas ni las que más hablan. Eso que solemos llamar magnetismo personal o carisma no es un don reservado a unos pocos: es una combinación de presencia, seguridad interna y la forma en que alguien se relaciona consigo mismo y con los demás."
+      },
+      {
+        "type": "h2",
+        "text": "Qué es el magnetismo personal"
+      },
+      {
+        "type": "p",
+        "text": "El magnetismo personal es la capacidad de generar atracción e interés en los demás a partir de la propia presencia, más que de la apariencia o las palabras. Tiene que ver con cómo te parás, cómo mirás, cómo escuchás y, sobre todo, con el nivel de comodidad que tenés con vos mismo. La gente percibe la seguridad genuina y la coherencia, y eso resulta atractivo."
+      },
+      {
+        "type": "h2",
+        "text": "De qué depende realmente"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "la autoestima: quien se valora no necesita la aprobación constante y eso se nota",
+          "la presencia: estar realmente ahí, escuchando, en lugar de actuar un personaje",
+          "el lenguaje corporal: una postura abierta y relajada comunica seguridad antes que cualquier frase",
+          "la autenticidad: el magnetismo sostenible nace de mostrarse, no de fingir"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Hábitos que desarrollan una presencia magnética"
+      },
+      {
+        "type": "p",
+        "text": "El magnetismo se cultiva. Trabajar la autoestima, cuidar la postura y la respiración, aprender a sostener la mirada sin tensión y a escuchar con atención genuina son prácticas que, repetidas, transforman la forma en que los demás te perciben. No se trata de manipular, sino de habitar tu presencia con más seguridad."
+      },
+      {
+        "type": "h2",
+        "text": "Magnetismo y poder femenino"
+      },
+      {
+        "type": "p",
+        "text": "En el caso del poder femenino, el magnetismo se vincula con la confianza, la inteligencia emocional y la capacidad de conectar desde un lugar auténtico. No es seducción superficial: es el efecto natural de una mujer que conoce su valor y se mueve desde esa certeza. Esa seguridad interior es, casi siempre, lo más atractivo."
+      },
+      {
+        "type": "p",
+        "text": "Si te interesa profundizar en las técnicas de atracción, inteligencia emocional y presencia magnética para desarrollar tu propio poder, hay material formativo dedicado específicamente a despertar esa cualidad de forma consciente."
+      }
+    ],
+    "relatedCourseSlug": "emperatriz-magnetica-version-premium"
+  },
+  {
     slug: 'como-hacer-auto-reiki',
     title: 'Cómo Hacer Auto Reiki: Guía Simple para Empezar',
     description:
@@ -94,6 +1066,7 @@ export const blogPosts = [
         text: 'Hacer auto reiki no requiere perfección, sino repetición consciente. Con el tiempo, esa práctica puede convertirse en un recurso concreto para bajar tensión, registrar mejor lo que te pasa y construir una relación más cuidada con tu propia energía.',
       },
     ],
+    relatedCourseSlug: 'reiki-usui-nivel-1',
   },
   {
     slug: 'como-es-una-sesion-de-reiki',
@@ -170,6 +1143,7 @@ export const blogPosts = [
         text: 'Una primera sesión de reiki puede servir para conocer la práctica desde la experiencia directa y ver si resuena con vos. A veces lo más valioso no es una sensación puntual, sino descubrir que existe un espacio donde podés bajar la velocidad, escuchar más al cuerpo y recuperar algo de equilibrio.',
       },
     ],
+    relatedCourseSlug: 'reiki-usui-nivel-1',
   },
   {
     slug: 'que-es-reiki',
@@ -256,6 +1230,7 @@ export const blogPosts = [
         text: 'Si te interesa el autocuidado, la energía y las prácticas de bienestar, aprender reiki puede ser una buena puerta de entrada. Su valor no está en prometer resultados absolutos, sino en ofrecer una herramienta sencilla para cultivar presencia, calma y sensibilidad energética con más conciencia.',
       },
     ],
+    relatedCourseSlug: 'reiki-usui-nivel-1',
   },
   {
     slug: 'reiki-nivel-1',
@@ -339,6 +1314,7 @@ export const blogPosts = [
         text: 'Si te interesa empezar con una práctica accesible y progresiva, reiki nivel 1 es un muy buen primer paso. Te permite conocer la lógica del sistema, entrenar autoaplicación y desarrollar una relación más consciente con el bienestar, la energía y la presencia.',
       },
     ],
+    relatedCourseSlug: 'reiki-usui-nivel-1',
   },
   {
     slug: 'beneficios-del-reiki',
@@ -409,6 +1385,7 @@ export const blogPosts = [
         text: 'La forma más madura de acercarse al reiki es valorar lo que sí puede ofrecer sin inflarlo. Si buscás una práctica complementaria para relajarte, ordenar la energía y cultivar bienestar con más conciencia, sus beneficios pueden ser reales y consistentes. Si buscás una solución mágica, probablemente la expectativa esté mal planteada desde el principio.',
       },
     ],
+    relatedCourseSlug: 'reiki-usui-nivel-1',
   },
   {
     slug: 'tirada-de-tarot-de-3-cartas',
@@ -544,6 +1521,7 @@ export const blogPosts = [
         text: 'Si estás empezando, esta es una de las prácticas más recomendables. No necesitás una estructura compleja para obtener claridad: con tres cartas, una buena pregunta y una interpretación atenta, ya podés construir lecturas muy valiosas.',
       },
     ],
+    relatedCourseSlug: 'tarot-para-principiantes',
   },
   {
     slug: 'arcanos-mayores-significado',
@@ -664,6 +1642,7 @@ export const blogPosts = [
         text: 'Si querés avanzar con seguridad, no intentes memorizarlas de golpe. Tomá una o dos por vez, observá sus símbolos, vinculalas con experiencias concretas y practicá con tiradas simples. Así, cada arcano deja de ser una definición aislada y se convierte en una herramienta viva de interpretación.',
       },
     ],
+    relatedCourseSlug: 'tarot-para-principiantes',
   },
   {
     slug: 'como-aprender-tarot-desde-cero',
@@ -818,6 +1797,7 @@ export const blogPosts = [
         text: 'El tarot no se domina en un fin de semana, pero sí puede aprenderse de forma ordenada desde el comienzo. Con práctica constante, cada carta deja de ser un concepto abstracto y se transforma en una herramienta concreta de lectura, reflexión y autoconocimiento.',
       },
     ],
+    relatedCourseSlug: 'tarot-para-principiantes',
   },
   {
     slug: 'que-es-el-tarot',
@@ -910,6 +1890,7 @@ export const blogPosts = [
         text: 'Más allá de la adivinación, el tarot es una puerta al mundo interior. Cada consulta es una invitación a pausar, mirar hacia adentro y encontrar respuestas que muchas veces ya tenemos. No importa si empezás con curiosidad o con una pregunta concreta: el tarot siempre tiene algo para mostrarte.',
       },
     ],
+    relatedCourseSlug: 'tarot-para-principiantes',
   },
   // ── ÁNGELES ────────────────────────────────────────────────────────────────
   {

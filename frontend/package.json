@@ -5,9 +5,11 @@
     "dev": "vite --mode es",
     "dev:es": "vite --mode es",
     "dev:pt": "vite --mode pt",
-    "build": "vite build --mode es",
-    "build:es": "vite build --mode es",
-    "build:pt": "vite build --mode pt",
+    "build": "vite build --mode es && node scripts/prerender.mjs es",
+    "build:es": "vite build --mode es && node scripts/prerender.mjs es",
+    "build:pt": "vite build --mode pt && node scripts/prerender.mjs pt",
+    "prerender": "node scripts/prerender.mjs es",
+    "prerender:pt": "node scripts/prerender.mjs pt",
     "preview": "vite preview"
   },
   "dependencies": {

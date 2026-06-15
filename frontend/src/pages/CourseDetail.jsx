@@ -131,6 +131,79 @@ export default function CourseDetail() {
   const buyUrl = course.affiliateUrl || course.sourceUrl;
   const hasHighlights = Array.isArray(course.highlights) && course.highlights.length > 0;
   const hasInstructorBio = !!course.instructorBio;
+  const courseUrl = `${SITE_URL}/curso/${slug}`;
+
+  // ── Datos estructurados (JSON-LD) para resultados enriquecidos en Google ──
+  const courseNode = {
+    '@type': 'Course',
+    '@id': `${courseUrl}#course`,
+    name: course.title,
+    description: course.description || course.tagline || course.title,
+    url: courseUrl,
+    inLanguage: course.language || 'es',
+    ...(course.imageUrl && { image: course.imageUrl }),
+    provider: {
+      '@type': 'Organization',
+      name: 'Academia Astral',
+      url: SITE_URL,
+    },
+    ...(course.instructor && {
+      author: { '@type': 'Person', name: course.instructor },
+    }),
+    hasCourseInstance: {
+      '@type': 'CourseInstance',
+      courseMode: 'online',
+      inLanguage: course.language || 'es',
+    },
+    ...(course.rating != null && course.reviewsCount > 0 && {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: course.rating.toFixed(1),
+        reviewCount: course.reviewsCount,
+        bestRating: '5',
+        worstRating: '1',
+      },
+    }),
+    ...(course.priceARS != null && {
+      offers: {
+        '@type': 'Offer',
+        price: course.priceARS,
+        priceCurrency: 'ARS',
+        availability: 'https://schema.org/InStock',
+        category: 'Paid',
+        url: courseUrl,
+      },
+    }),
+  };
+
+  const breadcrumbNode = {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE_URL },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: getCategoryName(course.category),
+        item: `${SITE_URL}/categoria/${course.category}`,
+      },
+      { '@type': 'ListItem', position: 3, name: course.title, item: courseUrl },
+    ],
+  };
+
+  const faqNode = {
+    '@type': 'FAQPage',
+    '@id': `${courseUrl}#faq`,
+    mainEntity: FAQS.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [courseNode, breadcrumbNode, faqNode],
+  };
 
   return (
     <>
@@ -141,8 +214,13 @@ export default function CourseDetail() {
         {course.imageUrl && <meta property="og:image" content={course.imageUrl} />}
         <meta property="og:title" content={course.title} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${SITE_URL}/curso/${slug}`} />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content={courseUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={course.title} />
+        <meta name="twitter:description" content={metaDesc} />
+        {course.imageUrl && <meta name="twitter:image" content={course.imageUrl} />}
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       {/* ── HERO ─────────────────────────────────────────────── */}

@@ -47,6 +47,39 @@ export default function Home() {
         <meta property="og:description" content={META_DESC} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
+        <meta property="og:image" content={`${SITE_URL}/og-image.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`${SITE_URL}/og-image.jpg`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'Organization',
+                '@id': `${SITE_URL}/#organization`,
+                name: SITE_NAME,
+                url: SITE_URL,
+                logo: `${SITE_URL}/og-image.jpg`,
+              },
+              {
+                '@type': 'WebSite',
+                '@id': `${SITE_URL}/#website`,
+                url: SITE_URL,
+                name: SITE_NAME,
+                inLanguage: 'es',
+                publisher: { '@id': `${SITE_URL}/#organization` },
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: {
+                    '@type': 'EntryPoint',
+                    urlTemplate: `${SITE_URL}/?search={search_term_string}`,
+                  },
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+            ],
+          })}
+        </script>
       </Helmet>
 
       <div className="bg-gradient-to-b from-[#251850] to-[#0F0A1E] pt-14 pb-10 text-center border-b border-[#7C3AED]/20">
