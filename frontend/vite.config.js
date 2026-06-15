@@ -11,7 +11,7 @@ function buildSeoFiles(mode) {
   const env = loadEnv(mode, process.cwd(), '');
   const lang = env.VITE_SITE_LANG === 'pt' ? 'pt' : 'es';
   const defaultSiteUrl =
-    lang === 'pt' ? 'https://pt.academia-astral.com' : 'https://academia-astral.com';
+    lang === 'pt' ? 'https://pt.academia-astral.com' : 'https://www.academia-astral.com';
   const siteUrl = (env.VITE_SITE_URL || defaultSiteUrl).replace(/\/+$/, '');
   const today = new Date().toISOString().slice(0, 10);
   const repoRoot = process.cwd();

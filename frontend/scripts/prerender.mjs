@@ -27,7 +27,7 @@ const outDir = path.join(root, mode === 'pt' ? 'dist-pt' : 'dist-es');
 
 const SITE_URL = (
   process.env.VITE_SITE_URL ||
-  (mode === 'pt' ? 'https://pt.academia-astral.com' : 'https://academia-astral.com')
+  (mode === 'pt' ? 'https://pt.academia-astral.com' : 'https://www.academia-astral.com')
 ).replace(/\/+$/, '');
 const SITE_NAME = 'Academia Astral';
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
