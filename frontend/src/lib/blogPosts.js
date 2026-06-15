@@ -1,5 +1,223 @@
 export const blogPosts = [
   {
+    "slug": "como-equilibrar-los-chakras",
+    "title": "Cómo Equilibrar los Chakras: Guía Práctica para Empezar",
+    "description": "Qué significa equilibrar los chakras, cómo reconocer cuándo uno está bloqueado y prácticas simples para armonizar tus centros energéticos en el día a día.",
+    "date": "2026-05-30",
+    "category": "chakras_energia",
+    "readTime": 8,
+    "content": [
+      {
+        "type": "p",
+        "text": "Equilibrar los chakras es una de las metas más buscadas por quienes se interesan en las terapias energéticas. La idea es simple de enunciar: cuando los centros energéticos fluyen de manera armónica, el cuerpo, la mente y las emociones tienden a sentirse más en orden. En la práctica, se trata de un trabajo de atención y constancia más que de fórmulas mágicas."
+      },
+      {
+        "type": "h2",
+        "text": "Qué significa equilibrar los chakras"
+      },
+      {
+        "type": "p",
+        "text": "Según la tradición, los chakras son centros de energía ubicados a lo largo del cuerpo, cada uno asociado a determinadas funciones físicas, emocionales y mentales. Equilibrarlos significa favorecer que la energía circule sin excesos ni bloqueos. No es un estado que se alcanza una vez y para siempre, sino algo que se cultiva con la práctica."
+      },
+      {
+        "type": "h2",
+        "text": "Señales de un chakra bloqueado"
+      },
+      {
+        "type": "p",
+        "text": "Aunque cada centro tiene sus particularidades, suele hablarse de desequilibrio cuando aparecen ciertos patrones sostenidos en el tiempo, tanto en lo emocional como en lo físico. La clave no es autodiagnosticarse con rigidez, sino usar esas señales como una invitación a prestar atención a un área de la vida."
+      },
+      {
+        "type": "h2",
+        "text": "Prácticas para armonizarlos"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "la respiración consciente, para registrar y movilizar la energía",
+          "la meditación enfocada en cada centro y su color asociado",
+          "el trabajo corporal suave, como estiramientos o movimiento libre",
+          "la atención a la alimentación, el descanso y el contacto con la naturaleza",
+          "las terapias energéticas guiadas, como el reiki o el trabajo con péndulo"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Constancia por encima de intensidad"
+      },
+      {
+        "type": "p",
+        "text": "Como en casi toda práctica energética, vale más la regularidad que el esfuerzo puntual. Dedicar unos minutos seguidos a registrar cómo está tu energía y a trabajarla con suavidad rinde más que una sesión larga y aislada. Con el tiempo, esa atención sostenida se traduce en una relación más consciente con tu cuerpo y tus emociones."
+      },
+      {
+        "type": "p",
+        "text": "Si querés profundizar en el trabajo con tu energía y recuperar equilibrio interior, hay formaciones dedicadas específicamente a fortalecer y armonizar tus centros energéticos."
+      }
+    ],
+    "relatedCourseSlug": "recupera-tu-fuerza-y-energia-interior"
+  },
+  {
+    "slug": "chakra-raiz-significado",
+    "title": "Chakra Raíz: Significado y Cómo Trabajarlo",
+    "description": "Qué es el chakra raíz, con qué aspectos de la vida se asocia, cómo reconocer cuándo está desequilibrado y prácticas para fortalecer tu sensación de seguridad.",
+    "date": "2026-05-29",
+    "category": "chakras_energia",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "El chakra raíz es el primero de los siete centros energéticos principales y, según la tradición, la base sobre la que se apoyan todos los demás. Se vincula con la seguridad, la estabilidad y la sensación de pertenencia. Cuando se trabaja este centro, suele buscarse una mayor sensación de arraigo y confianza en la vida cotidiana."
+      },
+      {
+        "type": "h2",
+        "text": "Qué es el chakra raíz"
+      },
+      {
+        "type": "p",
+        "text": "Ubicado en la base de la columna, el chakra raíz —Muladhara en sánscrito— se asocia con todo lo que tiene que ver con la supervivencia, lo material y los cimientos: el cuerpo, el hogar, el sustento y la sensación de seguridad básica. Es el centro que nos conecta con la tierra y con lo concreto."
+      },
+      {
+        "type": "h2",
+        "text": "Con qué se relaciona"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "la sensación de seguridad y estabilidad en la vida",
+          "la relación con el cuerpo y las necesidades básicas",
+          "el arraigo, la pertenencia y la confianza para sostenerse",
+          "la capacidad de habitar el presente sin vivir en la preocupación constante"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Cuándo conviene trabajarlo"
+      },
+      {
+        "type": "p",
+        "text": "Se suele prestar atención al chakra raíz en momentos de incertidumbre, cambios o sensación de inestabilidad, cuando aparece la necesidad de volver a sentir piso firme. No se trata de diagnosticar, sino de reconocer que ciertos momentos piden fortalecer la base antes de avanzar hacia otras cosas."
+      },
+      {
+        "type": "h2",
+        "text": "Prácticas para fortalecerlo"
+      },
+      {
+        "type": "p",
+        "text": "El trabajo con el chakra raíz suele incluir prácticas de conexión con el cuerpo y la tierra: caminar descalzo, el contacto con la naturaleza, ejercicios de respiración y arraigo, meditaciones enfocadas en la base de la columna y su color asociado, el rojo. La idea es cultivar, poco a poco, una sensación de mayor solidez interna."
+      },
+      {
+        "type": "p",
+        "text": "Si querés aprender a trabajar tus centros energéticos de forma guiada y recuperar equilibrio y fuerza interior, existen formaciones dedicadas a ese camino."
+      }
+    ],
+    "relatedCourseSlug": "recupera-tu-fuerza-y-energia-interior"
+  },
+  {
+    "slug": "senales-de-que-tus-angeles-estan-cerca",
+    "title": "Señales de que tus Ángeles Están Cerca",
+    "description": "Cuáles son las señales que distintas tradiciones asocian a la presencia de los ángeles, cómo interpretarlas con criterio y cómo fortalecer esa conexión.",
+    "date": "2026-05-28",
+    "category": "angeles",
+    "readTime": 6,
+    "content": [
+      {
+        "type": "p",
+        "text": "Muchas personas que trabajan con ángeles dicen percibir ciertas señales que asocian a su presencia. Más allá de la creencia de cada uno, prestar atención a esas señales suele funcionar como una forma de cultivar la confianza, la calma y la sensación de no estar solo frente a lo que se atraviesa."
+      },
+      {
+        "type": "h2",
+        "text": "Señales que suelen asociarse a los ángeles"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "encontrar plumas en lugares inesperados",
+          "ver secuencias de números repetidos, como el 1111",
+          "sentir una calidez, una calma o una presencia difícil de explicar",
+          "que aparezca la canción, la frase o la imagen justa en el momento justo",
+          "soñar de manera vívida con figuras que transmiten protección"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Cómo interpretarlas con criterio"
+      },
+      {
+        "type": "p",
+        "text": "La clave no es buscar señales en todos lados ni forzar interpretaciones, sino mantener una actitud de apertura y atención. Una señal cobra sentido sobre todo por el momento en que aparece y por lo que te moviliza. Tomarlas como recordatorios —de confianza, de pausa, de dirección— suele ser más útil que leerlas como mandatos."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo fortalecer la conexión"
+      },
+      {
+        "type": "p",
+        "text": "Quienes trabajan con ángeles suelen cultivar la conexión a través de momentos de silencio, intención clara, oración o meditación, y la práctica de pedir y agradecer. No hace falta nada complejo: alcanza con dedicar un espacio tranquilo a esa relación, con regularidad y con una actitud sincera."
+      },
+      {
+        "type": "p",
+        "text": "Si querés aprender a conectar con tus ángeles y arcángeles de forma guiada, hay formaciones dedicadas a desarrollar esa práctica paso a paso."
+      }
+    ],
+    "relatedCourseSlug": "taller-de-angeles"
+  },
+  {
+    "slug": "arcangel-miguel-quien-es",
+    "title": "Arcángel Miguel: Quién Es y Cómo Trabajar con Él",
+    "description": "Quién es el arcángel Miguel, con qué se lo asocia en distintas tradiciones, en qué momentos se lo invoca y cómo conectar con su energía de protección.",
+    "date": "2026-05-27",
+    "category": "angeles",
+    "readTime": 7,
+    "content": [
+      {
+        "type": "p",
+        "text": "El arcángel Miguel es probablemente el más conocido de los arcángeles. En distintas tradiciones espirituales se lo asocia con la protección, el coraje y la verdad. Quienes trabajan con él suelen invocarlo en momentos en los que buscan fuerza, claridad o resguardo frente a una situación difícil."
+      },
+      {
+        "type": "h2",
+        "text": "Quién es el arcángel Miguel"
+      },
+      {
+        "type": "p",
+        "text": "Su nombre suele traducirse como \"quién como Dios\", y aparece en varias tradiciones como una figura de gran jerarquía entre los arcángeles. Se lo representa habitualmente con una espada, símbolo de su función de proteger y de cortar con lo que ya no sirve. Más allá de la religión de cada uno, su figura se asocia de manera consistente con la protección."
+      },
+      {
+        "type": "h2",
+        "text": "Con qué se lo asocia"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "la protección frente a lo que se siente como una amenaza o un peso",
+          "el coraje para tomar decisiones y sostener lo que uno es",
+          "la verdad y la claridad para ver una situación con honestidad",
+          "la fuerza para soltar vínculos, miedos o etapas que ya cumplieron su ciclo"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "En qué momentos se lo invoca"
+      },
+      {
+        "type": "p",
+        "text": "Suele recurrirse al arcángel Miguel en situaciones de miedo, incertidumbre o cambio, cuando se necesita una sensación de resguardo o un impulso de valentía. La invocación no requiere fórmulas complejas: muchas personas simplemente le piden, con sus propias palabras, protección o claridad para lo que están viviendo."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo conectar con su energía"
+      },
+      {
+        "type": "p",
+        "text": "La conexión se cultiva con intención y presencia: un momento de silencio, una petición sincera, una vela encendida con atención o una meditación enfocada en su figura. Como en todo trabajo con ángeles, lo importante no es el ritual perfecto, sino la actitud con la que te acercás."
+      },
+      {
+        "type": "p",
+        "text": "Si querés aprender a trabajar con los arcángeles y profundizar en esta práctica de forma ordenada, hay formaciones dedicadas a la conexión angelical."
+      }
+    ],
+    "relatedCourseSlug": "taller-de-angeles"
+  },
+  {
     "slug": "arcanos-menores-del-tarot",
     "title": "Arcanos Menores del Tarot: Significado de los Cuatro Palos",
     "description": "Qué son los arcanos menores del tarot, cómo se dividen en cuatro palos, qué representa cada uno y cómo se diferencian de los arcanos mayores en una lectura.",
