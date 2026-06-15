@@ -2509,7 +2509,7 @@ export const blogPosts = [
     description:
       'Conocé qué es el péndulo hebreo, para qué sirve, cómo se usa en sanación y limpieza energética y qué lo diferencia de otros tipos de péndulo.',
     date: '2026-05-21',
-    category: 'chakras',
+    category: 'chakras_energia',
     readTime: 6,
     relatedCourseSlug: 'pendulo-hebreo',
     content: [

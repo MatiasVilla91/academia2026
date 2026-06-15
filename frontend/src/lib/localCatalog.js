@@ -16,7 +16,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/M105608919S",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.207Z",
     "highlights": [
       "Identificar patrones familiares inconscientes que se repiten en tu vida",
       "Comprender la dinámica sistémica de tu árbol genealógico",
@@ -63,7 +63,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/Q105608931Y?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.207Z",
     "highlights": [
       "Activar tu magnetismo femenino natural con técnicas de atracción sutil",
       "Aplicar inteligencia emocional femenina en tus relaciones",
@@ -110,7 +110,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/G105617195J",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.207Z",
     "highlights": [
       "Leer los 22 Arcanos Mayores y entender su simbolismo profundo",
       "Hacer tiradas básicas: 1 carta, 3 cartas y Cruz Celta paso a paso",
@@ -157,7 +157,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/E105605202R",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.207Z",
     "highlights": [
       "Liberar bloqueos energéticos que drenan tu fuerza vital",
       "Recargar tu energía rápidamente con técnicas prácticas",
@@ -204,7 +204,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/N105617410M?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Entender cómo funciona realmente la ley de atracción sin mitos",
       "Definir con claridad qué querés manifestar y por qué",
@@ -250,7 +250,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/Y105617504L?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Reprogramar patrones mentales limitantes que te impiden avanzar",
       "Vivir 40 días de transformación acompañada/o paso a paso",
@@ -297,7 +297,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/J105620830Q?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Comprender el origen y los principios fundamentales del Reiki",
       "Conocer el sistema de chakras y cómo trabaja el Reiki con ellos",
@@ -344,7 +344,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/G105620916X?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Encender tu médico espiritual interior con el poder del Reiki Angelical",
       "Conectar y canalizar la energía de los ángeles para sanar",
@@ -391,7 +391,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/Y105621043J?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Identificar y soltar las creencias que te mantienen en escasez",
       "Activar tu poder de manifestación con técnicas probadas",
@@ -436,7 +436,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/O105621397T?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Conectar con tus objetivos más profundos a través del autoconocimiento",
       "Crear y activar tu Vision Board de manera estratégica y poderosa",
@@ -483,7 +483,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/C105621494A?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Sentir y reconocer la energía angelical en tu vida diaria",
       "Comunicarte con tus ángeles y recibir sus mensajes con claridad",
@@ -530,7 +530,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/U105621638G?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Comprender la energía y el significado de cada número del 1 al 9",
       "Calcular e interpretar tu número de camino de vida",
@@ -577,7 +577,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/P105621642H?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Conocer tus habilidades y potencial a través de tu mapa numerológico",
       "Descifrar el carácter y comportamiento de las personas que te rodean",
@@ -612,7 +612,7 @@ const localCatalog = [
     "title": "Péndulo Hebreo Sanación y Limpieza Energética",
     "instructor": "Natalia Elizabeth Rodriguez",
     "slug": "pendulo-hebreo-sanacion-y-limpieza-energetica",
-    "category": "chakras",
+    "category": "chakras_energia",
     "sourceUrl": "https://hotmart.com/es/marketplace/productos/pendulo-hebreo-sanacion-y-limpieza-energetica/P75649639O",
     "language": "es",
     "description": "El Péndulo Hebreo es un mundo de posibilidades infinitas, testeo, limpieza, sanación y protección, todo en uno. Para ejercer la terapia necesitas el péndulo...",
@@ -624,7 +624,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/J105621751P?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Comprender la historia y el origen del Péndulo Hebreo",
       "Aprender a testear y trabajar con el péndulo de forma efectiva",
@@ -659,7 +659,7 @@ const localCatalog = [
     "title": "Péndulo Hebreo",
     "instructor": "Bernardo Portillo",
     "slug": "pendulo-hebreo",
-    "category": "chakras",
+    "category": "chakras_energia",
     "sourceUrl": "https://hotmart.com/es/marketplace/productos/hagsxd-pendulo-hebreo-xete6/V37316293Y",
     "language": "es",
     "description": "El Péndulo Hebreo o Metutelet  facilita la sanación física y emocional y es un armonizador muy potente de los campos electromagnéticos. El péndulo hebreo se...",
@@ -671,7 +671,7 @@ const localCatalog = [
     "affiliateUrl": "https://go.hotmart.com/A45736933Y?dp=1",
     "affiliationStatus": "pending",
     "active": true,
-    "scrapedAt": "2026-05-21T04:32:00.471Z",
+    "scrapedAt": "2026-06-15T18:24:52.208Z",
     "highlights": [
       "Comprender el funcionamiento del Péndulo Hebreo o Metutelet",
       "Usar el péndulo para sanación física y emocional",
