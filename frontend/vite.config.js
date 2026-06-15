@@ -16,25 +16,26 @@ function buildSeoFiles(mode) {
   const today = new Date().toISOString().slice(0, 10);
   const repoRoot = process.cwd();
   const publicDir = path.join(repoRoot, 'public');
-  const blogPostsPath = path.join(repoRoot, 'src', 'lib', 'blogPosts.js');
-  const blogPostsSource = fs.readFileSync(blogPostsPath, 'utf8');
+  const libDir = path.join(repoRoot, 'src', 'lib');
+
+  const blogPostsSource = fs.readFileSync(path.join(libDir, 'blogPosts.js'), 'utf8');
   const slugs = extractMatches(blogPostsSource, /["']?slug["']?\s*:\s*["']([^"']+)["']/g);
   const dates = extractMatches(blogPostsSource, /["']?date["']?\s*:\s*["']([^"']+)["']/g);
   const latestDate = dates[0] || today;
-  const categorySlugs = [
-    'tarot',
-    'chakras_energia',
-    'reiki',
-    'angeles',
-    'numerologia_astrologia',
-    'meditacion',
-    'magia_plantas',
-    'otros',
-  ];
+
+  // Cursos y categorías se derivan del catálogo (no hardcodear, así no quedan
+  // desactualizados ni se omiten páginas de curso).
+  const catalogSource = fs.readFileSync(path.join(libDir, 'localCatalog.js'), 'utf8');
+  const courseSlugs = extractMatches(catalogSource, /["']?slug["']?\s*:\s*["']([^"']+)["']/g);
+  const categorySlugs = Array.from(
+    new Set(extractMatches(catalogSource, /["']?category["']?\s*:\s*["']([^"']+)["']/g))
+  );
+
   const routes = [
     { path: '/', lastmod: latestDate },
     { path: '/blog', lastmod: latestDate },
     ...categorySlugs.map((slug) => ({ path: `/categoria/${slug}`, lastmod: latestDate })),
+    ...courseSlugs.map((slug) => ({ path: `/curso/${slug}`, lastmod: today })),
     ...slugs.map((slug, index) => ({
       path: `/blog/${slug}`,
       lastmod: dates[index] || latestDate,
