@@ -1,7 +1,10 @@
 import localCatalog from './localCatalog';
 
 const API_BASE = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/+$/, '');
-const USE_LOCAL_CATALOG = import.meta.env.DEV || import.meta.env.VITE_USE_LOCAL_CATALOG === '1';
+// App 100% frontend: siempre usamos el catálogo local (localCatalog.js).
+// Así no dependemos del backend, que se duerme y arruina la experiencia.
+// Para reactivar el backend en el futuro: poner VITE_USE_LOCAL_CATALOG=0 y borrar el "true ||".
+const USE_LOCAL_CATALOG = true || import.meta.env.DEV || import.meta.env.VITE_USE_LOCAL_CATALOG === '1';
 
 function sortCourses(items, sort) {
   const sorted = [...items];
